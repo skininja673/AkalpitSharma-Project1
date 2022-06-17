@@ -1,0 +1,64 @@
+html {
+  font-size: 62.5%; //1rem = 10px
+}
+
+*,
+h1,
+h2,
+h3,
+ul {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: $secondary-font;
+  font-size: 2rem;
+  line-height: 3.6rem;
+}
+
+img {
+  //   border: 2px solid red;
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+.skip-link {
+  border: 2px solid red;
+  position: absolute;
+  left: -1000px;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h2,
+h3 {
+  color: $black;
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 3rem;
+}
+
+.button {
+  @include orangeButton;
+  &:hover {
+    @include orangeButtonHover;
+  }
+}

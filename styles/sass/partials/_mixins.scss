@@ -1,0 +1,14 @@
+@mixin orangeButton {
+  font-family: $primary-font;
+  background-color: $accent-color;
+  color: $black;
+  font-size: 2rem;
+  padding: 10px 20px;
+}
+
+@mixin orangeButtonHover {
+  color: $accent-color;
+  border: 0.5px solid $accent-color;
+  background-color: $white;
+  transition: 0.1.5s;
+}

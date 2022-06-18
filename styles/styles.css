@@ -342,3 +342,69 @@ h3 {
   -webkit-transition: 0.1 0.5s;
   transition: 0.1 0.5s;
 }
+
+.indexHeader {
+  border: 4px dotted black;
+  background-color: #345231;
+}
+
+.topNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.topNav .sideMenuContainer {
+  border: 2px dotted blue;
+}
+.topNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.topNav ul a {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 25px;
+  color: #f6f6f6;
+}
+.topNav ul .logo {
+  font-size: 4rem;
+  font-family: "Abril Fatface", cursive;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.indexHeader .hamburger {
+  position: fixed;
+  font-size: 4rem;
+  color: #e4a436;
+  top: 20px;
+  left: 25px;
+  visibility: hidden;
+}
+
+.indexHeader .wrapper {
+  border: 2px dotted red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.indexHeader .wrapper .headerImageContainer {
+  border: 2px solid purple;
+}
+.indexHeader .wrapper .headerImage {
+  -webkit-box-shadow: 15px 15px #f6f6f6;
+          box-shadow: 15px 15px #f6f6f6;
+  width: 85%;
+}

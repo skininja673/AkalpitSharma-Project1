@@ -615,6 +615,87 @@ input[type=checkbox] {
   padding-bottom: 0.5rem;
 }
 
+.blogMain {
+  background-color: #f6f6f6;
+}
+.blogMain .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.blogMain .twoAside {
+  width: calc(35% - 60px);
+}
+.blogMain .blogContainer {
+  width: calc(65% - 60px);
+}
+.blogMain .twoAside,
+.blogMain .blogContainer {
+  margin: 120px 30px 30px 30px;
+}
+.blogMain .longBlog {
+  background-color: #fff;
+  padding: 30px;
+  border-bottom: 5px solid #709b6b;
+  margin-bottom: 3rem;
+}
+.blogMain .twoAside .top,
+.blogMain .twoAside .bottom {
+  background-color: #fff;
+  padding: 40px;
+}
+.blogMain .twoAside .top {
+  margin-bottom: 30px;
+}
+.blogMain .twoAside .top h3 {
+  margin: 30px 0px 20px 0px;
+}
+.blogMain .twoAside .top .findOutMore {
+  display: inline-block;
+  text-transform: lowercase;
+  font-size: 2rem;
+  color: #709b6b;
+  font-weight: 700;
+}
+.blogMain .twoAside .top .findOutMore::first-letter {
+  text-transform: uppercase;
+}
+.blogMain .twoAside .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blogMain .twoAside .bottom ul {
+  padding-top: 20px;
+  list-style-type: disc;
+  font-weight: normal;
+  list-style-position: inside;
+}
+
+.twoViewsContainer .views {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+  padding: 35px;
+  border-bottom: 5px solid #709b6b;
+}
+.twoViewsContainer img {
+  width: 100px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
 /*copyright styling is shared among index.html, blog.html and contact.html */
 .copyright {
   background-color: #1f1f1f;

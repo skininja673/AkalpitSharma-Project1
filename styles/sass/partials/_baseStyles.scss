@@ -17,7 +17,6 @@ body {
 }
 
 img {
-  //   border: 2px solid red;
   display: block;
   width: 100%;
 }
@@ -34,14 +33,11 @@ ul {
 }
 
 .skip-link {
-  border: 2px solid red;
   position: absolute;
   left: -1000px;
 }
 
 .wrapper {
-  // border: 2px solid red;
-
   max-width: 1280px;
   width: 90%;
   margin: 0 auto;
@@ -63,4 +59,8 @@ h3 {
   &:hover {
     @include orangeButtonHover;
   }
+}
+
+.wrapper p {
+  padding: 1.5rem 0px 1.5rem;
 }

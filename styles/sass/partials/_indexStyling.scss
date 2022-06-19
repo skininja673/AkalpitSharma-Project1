@@ -1,0 +1,170 @@
+/*This is the index.html styling sheet. The  navigation styling was completed at _topNavigation.scss which is rendered on each html extension pages*/
+
+// Styling header
+.indexHeader .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .titleImageContainer {
+    position: relative;
+    .circular {
+      position: absolute;
+      width: 150px;
+      top: -90px;
+      left: -60px;
+    }
+  }
+
+  //   big title 'Willow' styling
+  h1 {
+    color: $white-shade;
+    text-transform: uppercase;
+    font-family: $primary-font;
+
+    // font-size: 12rem;
+    font-size: clamp(90px, 8.5vw, 150px);
+  }
+
+  .headerImageContainer {
+    position: relative;
+    top: 30px;
+  }
+
+  // headshot image styling
+  .headerImage {
+    box-shadow: 15px 15px $white;
+    width: 85%;
+    margin-left: 50px;
+  }
+}
+/* end of <header> section styling 
+   start of <main> section styling
+*/
+
+// styling "who's willow" section
+.about {
+  background-color: $white-shade;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+// 'favourite things' and 'bucket list' styling
+.imgAndContent {
+  background-color: $white;
+}
+
+.imgAndContentContainer1,
+.imgAndContentContainer2 {
+  display: flex;
+}
+
+.contentContainer1 {
+  width: 50%;
+  padding: 75px;
+}
+
+.contentContainer2 {
+  width: 50%;
+  padding: 0px 75px;
+  text-align: right;
+}
+
+.imgContainer1 {
+  position: relative;
+  top: -45px;
+}
+.bridgeImage {
+  box-shadow: 20px 20px $green-grey, -400px 20px $green-grey;
+}
+
+.lotusImage {
+  box-shadow: 20px 20px $pine, 400px 20px $pine;
+}
+
+// styling "willow's journey" section
+.journey {
+  padding: 100px 0px;
+  background-color: $white-shade;
+}
+.journeyContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  .journeyPicContainer {
+    width: 30%;
+  }
+  .journeyImage {
+    box-shadow: 20px 20px $green-grey;
+  }
+  .journeyDesc {
+    width: calc(70% - 75px);
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  a {
+    align-self: flex-start;
+  }
+}
+
+// full-bleed-background image styling
+.fullBleed {
+  height: 40vh;
+  background-image: url(../assets/home-image-5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+// 3-pics gallery section styling
+.gallery {
+  background-color: $white;
+  padding: 100px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/*end of <main> section styling
+  start of <footer> section styling*/
+
+.indexFooter {
+  background-color: $white-shade;
+  padding: 100px;
+
+  .footerFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footerFlexContainer li {
+    width: calc(50% - 20px);
+    display: flex;
+    margin: 10px;
+  }
+}
+
+// tiny yellow circular icon styling
+.iconContainer {
+  width: 140px;
+  height: 50px;
+  background-color: $accent-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.iconContent {
+  padding-left: 2rem;
+}
+
+//styling 'copyright line'
+.copyright {
+  background-color: $black;
+  color: $white-shade;
+  text-align: center;
+}

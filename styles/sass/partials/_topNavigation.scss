@@ -1,0 +1,46 @@
+/*This is the common navigation styling, which is rendered on index.html, blog.html and contact.html*/
+
+.indexHeader {
+  background-color: $pine;
+}
+
+.topNav {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: flex;
+
+    a {
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 25px;
+      color: $white-shade;
+    }
+    .logo {
+      font-size: 4rem;
+      font-family: $primary-font;
+    }
+  }
+  & a:hover {
+    color: $accent-color;
+    transition: 0.3s ease;
+  }
+}
+
+// removing input checkbox
+input[type="checkbox"] {
+  display: none;
+}
+
+// hamburger's label <i> styling
+// and removing it
+.indexHeader .hamburger {
+  // border: 2px dotted blue;
+  position: fixed;
+  font-size: 4rem;
+  color: $accent-color;
+  top: 20px;
+  left: 25px;
+  visibility: hidden;
+}

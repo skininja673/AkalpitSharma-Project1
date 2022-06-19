@@ -305,7 +305,6 @@ ul {
 }
 
 .skip-link {
-  border: 2px solid red;
   position: absolute;
   left: -1000px;
 }
@@ -338,13 +337,17 @@ h3 {
 .button:hover {
   color: #e4a436;
   border: 0.5px solid #e4a436;
-  background-color: #f6f6f6;
+  background-color: #fff;
   -webkit-transition: 0.1 0.5s;
   transition: 0.1 0.5s;
 }
 
+.wrapper p {
+  padding: 1.5rem 0px 1.5rem;
+}
+
+/*This is the common navigation styling, which is rendered on index.html, blog.html and contact.html*/
 .indexHeader {
-  border: 4px dotted black;
   background-color: #345231;
 }
 
@@ -355,9 +358,6 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.topNav .sideMenuContainer {
-  border: 2px dotted blue;
 }
 .topNav ul {
   display: -webkit-box;
@@ -374,6 +374,11 @@ h3 {
   font-size: 4rem;
   font-family: "Abril Fatface", cursive;
 }
+.topNav a:hover {
+  color: #e4a436;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
 
 input[type=checkbox] {
   display: none;
@@ -388,8 +393,8 @@ input[type=checkbox] {
   visibility: hidden;
 }
 
+/*This is the index.html styling sheet. The  navigation styling was completed at _topNavigation.scss which is rendered on each html extension pages*/
 .indexHeader .wrapper {
-  border: 2px dotted red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,11 +405,182 @@ input[type=checkbox] {
       -ms-flex-align: center;
           align-items: center;
 }
+.indexHeader .wrapper .titleImageContainer {
+  position: relative;
+}
+.indexHeader .wrapper .titleImageContainer .circular {
+  position: absolute;
+  width: 150px;
+  top: -90px;
+  left: -60px;
+}
+.indexHeader .wrapper h1 {
+  color: #f6f6f6;
+  text-transform: uppercase;
+  font-family: "Abril Fatface", cursive;
+  font-size: clamp(90px, 8.5vw, 150px);
+}
 .indexHeader .wrapper .headerImageContainer {
-  border: 2px solid purple;
+  position: relative;
+  top: 30px;
 }
 .indexHeader .wrapper .headerImage {
-  -webkit-box-shadow: 15px 15px #f6f6f6;
-          box-shadow: 15px 15px #f6f6f6;
+  -webkit-box-shadow: 15px 15px #fff;
+          box-shadow: 15px 15px #fff;
   width: 85%;
+  margin-left: 50px;
+}
+
+/* end of <header> section styling 
+   start of <main> section styling
+*/
+.about {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+.imgAndContent {
+  background-color: #fff;
+}
+
+.imgAndContentContainer1,
+.imgAndContentContainer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contentContainer1 {
+  width: 50%;
+  padding: 75px;
+}
+
+.contentContainer2 {
+  width: 50%;
+  padding: 0px 75px;
+  text-align: right;
+}
+
+.imgContainer1 {
+  position: relative;
+  top: -45px;
+}
+
+.bridgeImage {
+  -webkit-box-shadow: 20px 20px #709b6b, -400px 20px #709b6b;
+          box-shadow: 20px 20px #709b6b, -400px 20px #709b6b;
+}
+
+.lotusImage {
+  -webkit-box-shadow: 20px 20px #345231, 400px 20px #345231;
+          box-shadow: 20px 20px #345231, 400px 20px #345231;
+}
+
+.journey {
+  padding: 100px 0px;
+  background-color: #f6f6f6;
+}
+
+.journeyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.journeyContainer .journeyPicContainer {
+  width: 30%;
+}
+.journeyContainer .journeyImage {
+  -webkit-box-shadow: 20px 20px #709b6b;
+          box-shadow: 20px 20px #709b6b;
+}
+.journeyContainer .journeyDesc {
+  width: calc(70% - 75px);
+  margin-left: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.journeyContainer a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.fullBleed {
+  height: 40vh;
+  background-image: url(../assets/home-image-5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.gallery {
+  background-color: #fff;
+  padding: 100px;
+}
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*end of <main> section styling
+  start of <footer> section styling*/
+.indexFooter {
+  background-color: #f6f6f6;
+  padding: 100px;
+}
+.indexFooter .footerFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.indexFooter .footerFlexContainer li {
+  width: calc(50% - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+.iconContainer {
+  width: 140px;
+  height: 50px;
+  background-color: #e4a436;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.iconContent {
+  padding-left: 2rem;
+}
+
+.copyright {
+  background-color: #1f1f1f;
+  color: #f6f6f6;
+  text-align: center;
 }

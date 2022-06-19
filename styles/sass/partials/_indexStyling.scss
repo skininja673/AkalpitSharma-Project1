@@ -16,8 +16,9 @@
     }
   }
 
-  //   big title 'Willow' styling
-  h1 {
+  // big title 'Willow' styling
+  .title {
+    // border: 2px solid red;
     color: $white-shade;
     text-transform: uppercase;
     font-family: $primary-font;
@@ -38,6 +39,7 @@
     margin-left: 50px;
   }
 }
+
 /* end of <header> section styling 
    start of <main> section styling
 */
@@ -162,9 +164,4 @@
   padding-left: 2rem;
 }
 
-//styling 'copyright line'
-.copyright {
-  background-color: $black;
-  color: $white-shade;
-  text-align: center;
-}
+// media-query

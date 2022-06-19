@@ -1,5 +1,7 @@
 @mixin orangeButton {
   font-family: $primary-font;
+  border: none;
+  text-transform: uppercase;
   background-color: $accent-color;
   color: $black;
   font-size: 2rem;

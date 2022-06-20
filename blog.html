@@ -33,7 +33,7 @@
             <li><a href="index.html">about</a></li>
             <li><a href="index.html" class="logo">willow</a></li>
             <li><a href="blog.html">blog</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="contact.html">contact</a></li>
           </ul>
         </div>
       </nav>
@@ -180,31 +180,43 @@
           </div>
 
           <!-- form -->
-          <form action="#" class="flexMe">
-            <label for="name" class="sr-only">Name</label>
-            <input type="text" name="name" id="name" placeholder="Name" />
 
-            <label for="email" class="sr-only">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email address"
-            />
+          <section class="blogform">
+            <div class="formContainer">
+              <form action="#" class="flexMe">
+                <label for="name" class="sr-only">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  class="name"
+                />
 
-            <label for="textArea" class="sr-only">comment</label>
-            <textarea
-              name="textArea"
-              id="textArea"
-              cols="30"
-              rows="10"
-              placeholder="Comment"
-            ></textarea>
+                <label for="email" class="sr-only">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email address"
+                  class="email"
+                />
 
-            <button type="submit" class="postComment button">
-              post comment
-            </button>
-          </form>
+                <label for="textArea" class="sr-only">comment</label>
+                <textarea
+                  name="textArea"
+                  id="textArea"
+                  cols="30"
+                  rows="10"
+                  placeholder="Comment"
+                ></textarea>
+
+                <button type="submit" class="postComment button">
+                  post comment
+                </button>
+              </form>
+            </div>
+          </section>
         </div>
       </div>
       <!--blogContainer end-->

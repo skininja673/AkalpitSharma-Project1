@@ -1,0 +1,47 @@
+.contactMain {
+  //   border: 2px solid magenta;
+  background-color: $white-shade;
+  .wrapper {
+    // border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px 0px;
+  }
+  .socialContainer {
+    background-color: $white;
+    padding: 40px 25px;
+    margin-top: 10px;
+    align-self: flex-start;
+
+    .socialIconsContainer {
+      //   border: 2px solid magenta;
+      display: flex;
+      //   justify-content: space-between;
+
+      a {
+        // border: 1px solid magenta;
+        padding-right: 2.5rem;
+        margin-right: 1rem;
+        font-size: 3rem;
+        color: $pine;
+        transition: 0.2s;
+        &:hover {
+          color: $green-grey;
+        }
+      }
+    }
+
+    .information {
+      //   border: 2px solid green;
+      .e-mail {
+        // border: 2px solid red;
+        font-weight: 700;
+      }
+    }
+  }
+  .contactMeForm {
+    // border: 2px solid goldenrod;
+    width: 70%;
+  }
+}

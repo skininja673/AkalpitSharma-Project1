@@ -757,6 +757,50 @@ input[type=checkbox] {
   opacity: 1;
 }
 
+.contactMain {
+  background-color: #f6f6f6;
+}
+.contactMain .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0px;
+}
+.contactMain .socialContainer {
+  background-color: #fff;
+  padding: 40px 25px;
+  margin-top: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.contactMain .socialContainer .socialIconsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactMain .socialContainer .socialIconsContainer a {
+  padding-right: 2.5rem;
+  margin-right: 1rem;
+  font-size: 3rem;
+  color: #345231;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.contactMain .socialContainer .socialIconsContainer a:hover {
+  color: #709b6b;
+}
+.contactMain .socialContainer .information .e-mail {
+  font-weight: 700;
+}
+.contactMain .contactMeForm {
+  width: 70%;
+}
+
 /*copyright styling is shared among index.html, blog.html and contact.html */
 .copyright {
   background-color: #1f1f1f;

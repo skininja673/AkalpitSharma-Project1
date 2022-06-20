@@ -1,8 +1,6 @@
 .contactMain {
-  //   border: 2px solid magenta;
   background-color: $white-shade;
   .wrapper {
-    // border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -15,12 +13,9 @@
     align-self: flex-start;
 
     .socialIconsContainer {
-      //   border: 2px solid magenta;
       display: flex;
-      //   justify-content: space-between;
 
       a {
-        // border: 1px solid magenta;
         padding-right: 2.5rem;
         margin-right: 1rem;
         font-size: 3rem;
@@ -33,15 +28,12 @@
     }
 
     .information {
-      //   border: 2px solid green;
       .e-mail {
-        // border: 2px solid red;
         font-weight: 700;
       }
     }
   }
   .contactMeForm {
-    // border: 2px solid goldenrod;
     width: 70%;
   }
 }

@@ -3,8 +3,10 @@
 @import "./partials/mixins";
 @import "./partials/baseStyles";
 @import "./partials/topNavigation";
+@import "./partials/copyRightJunoFooter";
+@import "./partials/formStyling";
+
+// index.html, blog.html, and contact.html styling
 @import "./partials/indexStyling";
 @import "./partials/blogStyling";
-@import "./partials/formStyling";
 @import "./partials/contactMeStyling";
-@import "./partials/copyRightJuno";

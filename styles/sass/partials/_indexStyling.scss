@@ -1,45 +1,50 @@
 /*This is the index.html styling sheet. The  navigation styling was completed at _topNavigation.scss which is rendered on each html extension pages*/
 
 // Styling header
-.indexHeader .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .titleImageContainer {
-    position: relative;
-    .circular {
-      position: absolute;
-      width: 150px;
-      top: -90px;
-      left: -60px;
-    }
-  }
-
-  // big title 'Willow' styling
-  .title {
-    // border: 2px solid red;
-    color: $white-shade;
-    text-transform: uppercase;
-    font-family: $primary-font;
-
-    // font-size: 12rem;
-    font-size: clamp(90px, 8.5vw, 150px);
-  }
-
-  .headerImageContainer {
-    position: relative;
-    top: 30px;
-  }
-
-  // headshot image styling
-  .headerImage {
-    box-shadow: 15px 15px $white;
-    width: 85%;
-    margin-left: 50px;
-  }
+.indexHeader {
+  background-color: $pine;
 }
 
+.indexHeader {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .titleImageContainer {
+      position: relative;
+      .circular {
+        position: absolute;
+        width: 150px;
+        top: -90px;
+        left: -60px;
+      }
+    }
+
+    // big title 'Willow' styling
+    .title {
+      // border: 2px solid red;
+      color: $white-shade;
+      text-transform: uppercase;
+      font-family: $primary-font;
+
+      // font-size: 12rem;
+      font-size: clamp(90px, 8.5vw, 150px);
+    }
+
+    .headerImageContainer {
+      position: relative;
+      top: 30px;
+    }
+
+    // headshot image styling
+    .headerImage {
+      box-shadow: 15px 15px $white;
+      width: 85%;
+      margin-left: 50px;
+    }
+  }
+}
 /* end of <header> section styling 
    start of <main> section styling
 */

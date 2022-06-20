@@ -395,7 +395,80 @@ input[type=checkbox] {
   visibility: hidden;
 }
 
+/*copyright styling is shared among index.html, blog.html and contact.html */
+.copyright {
+  background-color: #1f1f1f;
+  color: #f6f6f6;
+  text-align: center;
+  padding: 15px;
+}
+
+/*This partial styles the form section of blog.html and contact.html*/
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.formContainer .flexMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.formContainer .name,
+.formContainer .email {
+  padding: 20px;
+  width: calc(50% - 5px);
+  margin: 10px 0px;
+  border: none;
+}
+.formContainer .name:hover,
+.formContainer .email:hover {
+  border: 1.8px solid #709b6b;
+}
+.formContainer textarea {
+  width: 100%;
+  margin: 20px 0px;
+  padding: 30px 20px;
+  font-size: 2rem;
+  border: none;
+}
+.formContainer textarea:hover {
+  border: 1.8px solid #709b6b;
+}
+.formContainer .postComment {
+  width: 100%;
+}
+.formContainer ::-webkit-input-placeholder {
+  color: #1f1f1f;
+  opacity: 1;
+}
+.formContainer ::-moz-placeholder {
+  color: #1f1f1f;
+  opacity: 1;
+}
+.formContainer :-ms-input-placeholder {
+  color: #1f1f1f;
+  opacity: 1;
+}
+.formContainer ::-ms-input-placeholder {
+  color: #1f1f1f;
+  opacity: 1;
+}
+.formContainer ::placeholder {
+  color: #1f1f1f;
+  opacity: 1;
+}
+
 /*This is the index.html styling sheet. The  navigation styling was completed at _topNavigation.scss which is rendered on each html extension pages*/
+.indexHeader {
+  background-color: #345231;
+}
+
 .indexHeader .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,7 +685,7 @@ input[type=checkbox] {
   text-transform: uppercase;
   font-family: "Abril Fatface", cursive;
   font-size: clamp(50px, 3vw, 55px);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
 }
 
 .blogMain {
@@ -696,67 +769,6 @@ input[type=checkbox] {
   margin-right: 15px;
 }
 
-/*This partial styles the form section of blog.html and contact.html*/
-.formContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.formContainer .flexMe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.formContainer .name,
-.formContainer .email {
-  padding: 20px;
-  width: calc(50% - 5px);
-  margin: 10px 0px;
-  border: none;
-}
-.formContainer .name:hover,
-.formContainer .email:hover {
-  border: 1.8px solid #709b6b;
-}
-.formContainer textarea {
-  width: 100%;
-  margin: 20px 0px;
-  padding: 30px 20px;
-  font-size: 2rem;
-  border: none;
-}
-.formContainer textarea:hover {
-  border: 1.8px solid #709b6b;
-}
-.formContainer .postComment {
-  width: 100%;
-}
-.formContainer ::-webkit-input-placeholder {
-  color: #1f1f1f;
-  opacity: 1;
-}
-.formContainer ::-moz-placeholder {
-  color: #1f1f1f;
-  opacity: 1;
-}
-.formContainer :-ms-input-placeholder {
-  color: #1f1f1f;
-  opacity: 1;
-}
-.formContainer ::-ms-input-placeholder {
-  color: #1f1f1f;
-  opacity: 1;
-}
-.formContainer ::placeholder {
-  color: #1f1f1f;
-  opacity: 1;
-}
-
 .contactMain {
   background-color: #f6f6f6;
 }
@@ -799,11 +811,4 @@ input[type=checkbox] {
 }
 .contactMain .contactMeForm {
   width: 70%;
-}
-
-/*copyright styling is shared among index.html, blog.html and contact.html */
-.copyright {
-  background-color: #1f1f1f;
-  color: #f6f6f6;
-  text-align: center;
 }

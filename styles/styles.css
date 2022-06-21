@@ -395,6 +395,20 @@ input[type=checkbox] {
   visibility: hidden;
 }
 
+@media (max-width: 690px) {
+  .topNav {
+    border: 2px solid red;
+  }
+
+  .indexHeader .hamburger {
+    visibility: visible;
+    text-align: center;
+  }
+
+  input[type=checkbox]:checked .indexHeader .hamburger {
+    color: black;
+  }
+}
 /*copyright styling is shared among index.html, blog.html and contact.html */
 .copyright {
   background-color: #1f1f1f;
@@ -695,27 +709,29 @@ input[type=checkbox] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .blogMain .twoAside {
-  width: calc(35% - 60px);
+  width: calc(40% - 15px);
+  margin-right: 10px;
 }
 .blogMain .blogContainer {
-  width: calc(65% - 60px);
+  width: calc(60% - 15px);
+  margin-left: 10px;
 }
 .blogMain .twoAside,
 .blogMain .blogContainer {
-  margin: 120px 30px 30px 30px;
+  margin: 120px 0px;
 }
 .blogMain .longBlog {
   background-color: #fff;
   padding: 30px;
   border-bottom: 5px solid #709b6b;
-  margin-bottom: 3rem;
+  margin-bottom: 1.8rem;
 }
 .blogMain .twoAside .top,
 .blogMain .twoAside .bottom {
@@ -754,6 +770,18 @@ input[type=checkbox] {
   list-style-position: inside;
 }
 
+.twoViewsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .twoViewsContainer .views {
   background-color: #fff;
   display: -webkit-box;
@@ -765,8 +793,12 @@ input[type=checkbox] {
 }
 .twoViewsContainer img {
   width: 100px;
-  margin-top: 15px;
+  margin-top: 2px;
   margin-right: 15px;
+}
+
+.viewContentContainer p {
+  padding: 1px;
 }
 
 .contactMain {

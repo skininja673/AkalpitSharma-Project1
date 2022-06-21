@@ -44,3 +44,29 @@ input[type="checkbox"] {
   left: 25px;
   visibility: hidden;
 }
+
+// media query
+@media (max-width: 690px) {
+  .topNav {
+    border: 2px solid red;
+  }
+
+  // show hamburger icon
+  .indexHeader {
+    .hamburger {
+      visibility: visible;
+      text-align: center;
+    }
+  }
+
+  input[type="checkbox"]:checked {
+    .indexHeader .hamburger {
+      color: black;
+    }
+  }
+
+  // .sideMenuContainer {
+  //   // border: 2px solid blue;
+
+  // }
+}

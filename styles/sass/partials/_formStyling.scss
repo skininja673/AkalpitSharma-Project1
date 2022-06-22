@@ -3,6 +3,7 @@
 .formContainer {
   display: flex;
   .flexMe {
+    // border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -36,3 +37,40 @@
     opacity: 1;
   }
 }
+
+// .formContainer {
+//   display: flex;
+//   .flexMe {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//   }
+//   .name,
+//   .email {
+//     padding: 20px;
+//     width: calc(50% - 5px);
+//     margin: 10px 0px;
+//     border: none;
+//     &:hover {
+//       border: 1.8px solid $green-grey;
+//     }
+//   }
+//   textarea {
+//     width: 100%;
+//     margin: 20px 0px;
+//     padding: 30px 20px;
+//     font-size: 2rem;
+//     border: none;
+//     &:hover {
+//       border: 1.8px solid $green-grey;
+//     }
+//   }
+//   //button
+//   .postComment {
+//     width: 100%;
+//   }
+//   ::placeholder {
+//     color: $black;
+//     opacity: 1;
+//   }
+// }

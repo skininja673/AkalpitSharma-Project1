@@ -1,0 +1,131 @@
+// media query
+
+// *************PROBLEM****************
+@media (max-width: 1108px) {
+  .blogMain .wrapper {
+    flex-direction: column;
+  }
+
+  .twoAside {
+    .contentContainer,
+    .bottom {
+      text-align: center;
+    }
+  }
+
+  .blogContainer {
+    text-align: center;
+  }
+
+  //   .twoAside,
+  .twoAside {
+    min-width: 100%;
+    margin: 0px !important;
+  }
+  .blogContainer {
+    min-width: 100%;
+    // margin: 0px !important;
+  }
+  //   .blogContainer {
+  //     margin-top: 1rem;
+  //   }
+
+  .flexMe {
+    margin-bottom: 1rem;
+    input[class="email"],
+    input[class="name"] {
+      width: 100%;
+    }
+  }
+}
+//*******************************************************
+
+@media (max-width: 1307px) {
+  //contact form
+  .contactMain {
+    border: 2px solid red;
+    .wrapper {
+      .socialContainer {
+        width: 100%;
+
+        .socialIconsContainer {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .contactMeForm {
+        width: 100%;
+        margin-top: 2rem;
+        .formContainer {
+          .flexMe {
+            width: 100%;
+            flex-wrap: wrap;
+            flex-direction: column;
+          }
+          .name,
+          .email {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 934px) {
+  .imgAndContent {
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+
+    .wrapper {
+      // border: 2px solid green;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+
+    .contentContainer1,
+    .contentContainer2 {
+      // border: 2px dotted goldenrod;
+      width: 100%;
+      text-align: center;
+    }
+    .imgContainer2 {
+      // border: 3px solid purple;
+      order: -1;
+    }
+    .contentContainer2 {
+      padding: 100px 20px;
+    }
+    .bridgeImage,
+    .lotusImage {
+      // border: 2px solid black;
+      max-width: 80%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  // willows journey
+  .journeyContainer {
+    .journeyPicContainer {
+      // border: 2px solid red;
+      margin-left: 100px;
+
+      .journeyImage {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+    .journeyDesc {
+      margin: 70px 0px;
+      text-align: center;
+      a {
+        margin: 0 auto;
+      }
+    }
+  }
+}

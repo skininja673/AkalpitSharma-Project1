@@ -1,13 +1,11 @@
 .contactMain {
   background-color: $white-shade;
-  // border: 2px solid red;
 
   .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 100px 0px;
-    // min-height: 30vh;
   }
   .socialContainer {
     background-color: $white;
@@ -29,7 +27,6 @@
         }
       }
     }
-
     .information {
       .e-mail {
         font-weight: 700;

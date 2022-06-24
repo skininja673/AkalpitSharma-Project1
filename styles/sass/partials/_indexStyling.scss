@@ -23,12 +23,9 @@
 
     // big title 'Willow' styling
     .title {
-      // border: 2px solid red;
       color: $white-shade;
       text-transform: uppercase;
       font-family: $primary-font;
-
-      // font-size: 12rem;
       font-size: clamp(90px, 8.5vw, 150px);
     }
 

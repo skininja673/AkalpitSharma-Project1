@@ -1,4 +1,4 @@
-// media query
+// media queries
 
 @media (max-width: 1108px) {
   .blogMain .wrapper {
@@ -37,7 +37,6 @@
 @media (max-width: 1307px) {
   //contact form
   .contactMain {
-    // border: 2px solid red;
     .wrapper {
       .socialContainer {
         width: 100%;
@@ -124,24 +123,15 @@
     }
   }
 
-  // GALLERY
-
   //---------------- hamburger--------------------
-
   .topNav {
     z-index: 20;
   }
-  // .indexHeader .hamburger {
-  //   visibility: visible;
-  //   border: 2px solid magenta;
-  // }
 
   .topNav {
-    // border: 2px solid magenta;
     position: fixed;
     top: 0px;
     width: 100%;
-    // min-height: 300px;
     padding: 0;
 
     .logo {
@@ -154,16 +144,9 @@
   }
 
   .sideMenuContainer {
-    // border: 2px dotted black;
     position: fixed;
-    // top: 0;
-    // display: inline-block;
-    // top: 70px;
-    // left: 0px;
     display: flex;
-    // flex-direction: column;
     width: 100%;
-    // align-items: center;
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -172,30 +155,23 @@
   }
 
   .topNav ul {
-    // border: 2px solid yellow;
-    // display: block;
     background-color: $green-grey;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    // z-index: 30;
 
     li {
       display: inline-block;
-      // padding: 5px;
     }
     a {
-      // border: 2px solid red;
-      // padding: 2rem 1rem;
       padding: 0 2rem;
     }
   }
 
   // header
   .indexHeader .wrapper {
-    // border: 2px solid blue;
     width: 100%;
     min-height: 10vh;
 
@@ -204,28 +180,23 @@
     flex-wrap: wrap;
 
     .titleImageContainer {
-      // border: 2px solid yellow;
       font-size: 20px;
       margin-top: 100px;
       z-index: 10;
       position: relative;
 
       img {
-        // display: inline-block;
-        // border: 2px solid black;
         display: none;
       }
     }
 
     .headerImageContainer {
-      // border: 2px solid magenta;
       width: 100%;
       margin: 0 auto;
       padding: 1rem;
       width: 60%;
 
       img {
-        // border: 2px solid goldenrod;
         width: 100%;
         margin: 0 auto;
       }

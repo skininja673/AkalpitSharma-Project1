@@ -5,7 +5,6 @@
 }
 
 .topNav {
-  // border: 2px solid red;
   display: flex;
   justify-content: center;
 
@@ -30,7 +29,6 @@
 }
 
 // removing input checkbox
-
 input[type="checkbox"] {
   display: none;
 }
@@ -38,11 +36,8 @@ input[type="checkbox"] {
 // hamburger's label <i> styling
 // and removing it
 .indexHeader .hamburger {
-  // border: 2px dotted blue;
   position: fixed;
   font-size: 3rem;
   color: $accent-color;
-  // top: 20px;
-  // left: 25px;
   visibility: hidden;
 }

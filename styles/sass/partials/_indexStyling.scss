@@ -98,8 +98,6 @@
   flex-wrap: wrap;
 
   .journeyPicContainer {
-    // width: 30%;
-    // border: 2px solid magenta;
     flex: 1 1 calc(30% - 75px);
 
     margin-right: 75px;
@@ -138,14 +136,19 @@
 .gallery {
   background-color: $white;
   padding: 100px;
-  .flexContainer {
-    display: flex;
-    flex-wrap: wrap;
+  .galleryContainer {
+    .flexContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 
-    .listItem {
-      flex: 1 1 calc(100% / 3 - 10px);
-      margin: 5px;
-      min-width: 416px;
+      .listItem {
+        // flex: 1 1 calc(100% / 3 - 10px);
+        width: calc(100% / 3 - 10px);
+        margin: 5px;
+        min-width: 200px;
+        flex-grow: 1;
+      }
     }
   }
 }
@@ -162,9 +165,11 @@
 
     li {
       // border: 2px solid black;
-      flex: 1 1 calc(50% - 20px);
+      // flex: 1 1 calc(50% - 20px);
+      width: calc(50% - 20px);
       margin: 10px;
-      min-width: 475.5px;
+      // min-width: 475.5px;
+      // min-width: 100px;
       display: flex;
 
       // tiny yellow circular icon styling

@@ -388,9 +388,10 @@ input[type=checkbox] {
 
 .indexHeader .hamburger {
   position: fixed;
-  font-size: 3rem;
+  font-size: 3.2rem;
   color: #e4a436;
   visibility: hidden;
+  margin-top: 2px;
 }
 
 /*copyright styling is shared among index.html, blog.html and contact.html */
@@ -607,19 +608,23 @@ input[type=checkbox] {
   background-color: #fff;
   padding: 100px;
 }
-.gallery .flexContainer {
+.gallery .galleryContainer .flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.gallery .flexContainer .listItem {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 calc(33.3333333333% - 10px);
-          flex: 1 1 calc(33.3333333333% - 10px);
+.gallery .galleryContainer .flexContainer .listItem {
+  width: calc(33.3333333333% - 10px);
   margin: 5px;
-  min-width: 416px;
+  min-width: 200px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .indexFooter {
@@ -634,11 +639,8 @@ input[type=checkbox] {
       flex-wrap: wrap;
 }
 .indexFooter .footerFlexContainer li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 calc(50% - 20px);
-          flex: 1 1 calc(50% - 20px);
+  width: calc(50% - 20px);
   margin: 10px;
-  min-width: 475.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,7 +672,7 @@ input[type=checkbox] {
 }
 
 .blogTitleContainer .wrapper {
-  min-height: 40vh;
+  min-height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -690,7 +692,7 @@ input[type=checkbox] {
   color: #fff;
   text-transform: uppercase;
   font-family: "Abril Fatface", cursive;
-  font-size: clamp(50px, 3vw, 55px);
+  font-size: clamp(40px, 3vw, 55px);
   padding-bottom: 0.3rem;
 }
 
@@ -943,19 +945,42 @@ input[type=checkbox] {
     margin: 0 auto;
   }
 
-  .journeyContainer .journeyPicContainer {
-    margin-left: 100px;
+  .journey {
+    padding: 0px;
   }
-  .journeyContainer .journeyPicContainer .journeyImage {
+  .journey .journeyContainer .journeyPicContainer {
+    min-width: 100%;
+  }
+  .journey .journeyContainer .journeyPicContainer .journeyImage {
     width: 80%;
     margin: 0 auto;
   }
-  .journeyContainer .journeyDesc {
+  .journey .journeyContainer .journeyDesc {
     margin: 70px 0px;
     text-align: center;
   }
-  .journeyContainer .journeyDesc a {
+  .journey .journeyContainer .journeyDesc a {
     margin: 0 auto;
+  }
+
+  .gallery {
+    padding: 30px 0px;
+    margin: 20px 0px;
+  }
+  .gallery .galleryContainer .flexContainer .listItem {
+    margin: 20px 0px 0px 0px;
+    min-width: 100%;
+  }
+
+  .indexFooter {
+    padding: 1rem 0px;
+  }
+  .indexFooter .footerContainer {
+    width: 100%;
+  }
+  .indexFooter .footerContainer .footerFlexContainer li {
+    width: 100%;
+    text-align: center;
   }
 
   .topNav {
@@ -1012,7 +1037,8 @@ input[type=checkbox] {
     display: inline-block;
   }
   .topNav ul a {
-    padding: 0 2rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
   }
 
   .indexHeader .wrapper {
@@ -1050,5 +1076,48 @@ input[type=checkbox] {
   .indexHeader .wrapper .title {
     margin-top: 50px;
     font-size: clamp(50px, 12vw, 100px);
+  }
+}
+@media (max-width: 650px) {
+  .blogTitleContainer .wrapper {
+    min-height: 40vh;
+  }
+
+  .date {
+    font-size: 1.6rem;
+    margin: 20px 0px;
+  }
+
+  .blogMain p {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0px;
+  }
+  .blogMain .wrapper,
+.blogMain .twoAside {
+    width: 100%;
+  }
+
+  .longBlog h2 {
+    font-size: 2.8rem;
+  }
+
+  .twoViewsContainer .views {
+    padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .twoViewsContainer .views .viewImageContainer img {
+    margin: 0 auto;
+  }
+
+  .contactMain .wrapper {
+    width: 100%;
+    padding: 0px;
+  }
+  .contactMain .wrapper .socialContainer {
+    margin-top: 0px;
   }
 }

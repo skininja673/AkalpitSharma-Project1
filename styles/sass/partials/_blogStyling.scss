@@ -8,7 +8,7 @@
 }
 .blogTitleContainer {
   .wrapper {
-    min-height: 40vh;
+    min-height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -19,7 +19,7 @@
   color: $white;
   text-transform: uppercase;
   font-family: $primary-font;
-  font-size: clamp(50px, 3vw, 55px);
+  font-size: clamp(40px, 3vw, 55px);
   padding-bottom: 0.3rem;
 }
 

@@ -37,7 +37,8 @@ input[type="checkbox"] {
 // and removing it
 .indexHeader .hamburger {
   position: fixed;
-  font-size: 3rem;
+  font-size: 3.2rem;
   color: $accent-color;
   visibility: hidden;
+  margin-top: 2px;
 }

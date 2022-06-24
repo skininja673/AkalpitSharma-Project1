@@ -5,6 +5,7 @@
 }
 
 .topNav {
+  // border: 2px solid red;
   display: flex;
   justify-content: center;
 
@@ -29,6 +30,7 @@
 }
 
 // removing input checkbox
+
 input[type="checkbox"] {
   display: none;
 }
@@ -38,9 +40,9 @@ input[type="checkbox"] {
 .indexHeader .hamburger {
   // border: 2px dotted blue;
   position: fixed;
-  font-size: 4rem;
+  font-size: 3rem;
   color: $accent-color;
-  top: 20px;
-  left: 25px;
+  // top: 20px;
+  // left: 25px;
   visibility: hidden;
 }

@@ -2,14 +2,14 @@
 
 // styling header
 .blogTitleContainer {
-  min-height: 40vh;
+  // min-height: 40vh;
   background-image: url(../assets/blog-image-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .blogTitleContainer {
   .wrapper {
-    height: 100%;
+    // border: 2px solid red;
     min-height: 40vh;
     display: flex;
     flex-direction: column;

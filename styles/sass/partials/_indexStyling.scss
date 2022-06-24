@@ -126,35 +126,10 @@
     }
   }
 }
-// .journey {
-//   padding: 100px 0px;
-//   background-color: $white-shade;
-// }
-// .journeyContainer {
-//   border: 2px solid red;
-//   display: flex;
-
-//   .journeyPicContainer {
-//     width: 30%;
-//   }
-//   .journeyImage {
-//     box-shadow: 20px 20px $green-grey;
-//   }
-//   .journeyDesc {
-//     width: calc(70% - 75px);
-//     margin-left: 75px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//   }
-//   a {
-//     align-self: flex-start;
-//   }
-// }
 
 // full-bleed-background image styling
 .fullBleed {
-  height: 40vh;
+  min-height: 20vh;
   background-image: url(../assets/home-image-5.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -171,46 +146,12 @@
     flex-wrap: wrap;
 
     .listItem {
-      // width: calc(100% / 3 - 10px);
       flex: 1 1 calc(100% / 3 - 10px);
       margin: 5px;
       min-width: 416px;
     }
   }
 }
-
-/*end of <main> section styling
-  start of <footer> section styling*/
-
-// .indexFooter {
-//   border: 2px solid red;
-//   background-color: $white-shade;
-//   padding: 100px;
-
-//   .footerFlexContainer {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-//   .footerFlexContainer li {
-//     width: calc(50% - 20px);
-//     display: flex;
-//     margin: 10px;
-//   }
-// }
-
-// // tiny yellow circular icon styling
-// .iconContainer {
-//   width: 140px;
-//   height: 50px;
-//   background-color: $accent-color;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   border-radius: 50%;
-// }
-// .iconContent {
-//   padding-left: 2rem;
-// }
 
 .indexFooter {
   // border: 2px solid red;

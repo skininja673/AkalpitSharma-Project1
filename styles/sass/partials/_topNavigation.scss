@@ -28,17 +28,14 @@
   }
 }
 
-// removing input checkbox
-input[type="checkbox"] {
-  display: none;
-}
-
 // hamburger's label <i> styling
 // and removing it
 .indexHeader .hamburger {
   position: fixed;
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: $accent-color;
-  visibility: hidden;
-  margin-top: 2px;
+  margin: 0.5rem;
+  right: 10px;
+  z-index: 10;
+  display: none;
 }

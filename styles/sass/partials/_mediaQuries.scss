@@ -1,52 +1,15 @@
 // media queries
-
-@media (max-width: 1108px) {
-  .blogMain .wrapper {
-    flex-direction: column;
-  }
-
-  .twoAside {
-    .contentContainer,
-    .bottom {
-      text-align: center;
-    }
-  }
-
-  .blogContainer {
-    text-align: center;
-  }
-  .blogMain .twoAside {
-    min-width: 100%;
-    margin: 0px 0px;
-  }
-  .blogMain .blogContainer {
-    min-width: 100%;
-    margin: 50px 0px;
-  }
-
-  .flexMe {
-    margin-bottom: 1rem;
-    input[class="email"],
-    input[class="name"] {
-      width: 100%;
-    }
-  }
-}
-//*******************************************************
-
 @media (max-width: 1307px) {
-  //contact form
+  //contact.html form
   .contactMain {
     .wrapper {
       .socialContainer {
         width: 100%;
-
         .socialIconsContainer {
           display: flex;
           justify-content: center;
         }
       }
-
       .contactMeForm {
         width: 100%;
         margin-top: 2rem;
@@ -66,144 +29,52 @@
   }
 }
 
-// ***********************************************************
-@media (max-width: 934px) {
-  .imgAndContent {
-    // border: 2px solid red;
-    display: flex;
+@media (max-width: 1108px) {
+  /*blog.html styling*/
+  .blogMain .wrapper {
     flex-direction: column;
+  }
 
-    .wrapper {
-      // border: 2px solid green;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
+  .twoAside {
+    .contentContainer,
+    .bottom {
       text-align: center;
     }
+  }
 
-    .contentContainer1,
-    .contentContainer2 {
-      // border: 2px dotted goldenrod;
+  .blogMain .twoAside {
+    min-width: 100%;
+    margin: 0px;
+  }
+
+  .blogMain .blogContainer {
+    min-width: 100%;
+    margin: 50px 0px;
+    text-align: center;
+  }
+
+  .flexMe {
+    margin-bottom: 1rem;
+    input[class="email"],
+    input[class="name"] {
       width: 100%;
-      text-align: center;
-    }
-    .imgContainer2 {
-      // border: 3px solid purple;
-      order: -1;
-    }
-    .contentContainer2 {
-      padding: 100px 20px;
-    }
-    .bridgeImage,
-    .lotusImage {
-      // border: 2px solid black;
-      max-width: 80%;
-      text-align: center;
-      margin: 0 auto;
     }
   }
+}
 
-  // willows journey
-  .journey {
-    padding: 0px;
-    .journeyContainer {
-      .journeyPicContainer {
-        min-width: 100%;
-
-        .journeyImage {
-          width: 80%;
-          margin: 0 auto;
-        }
-      }
-      .journeyDesc {
-        margin: 70px 0px;
-        text-align: center;
-        a {
-          margin: 0 auto;
-        }
-      }
-    }
-  }
-
-  // gallery
-  .gallery {
-    // border: 2px solid magenta;
-    padding: 30px 0px;
-    margin: 20px 0px;
-    .galleryContainer {
-      .flexContainer {
-        .listItem {
-          margin: 20px 0px 0px 0px;
-          min-width: 100%;
-        }
-      }
-    }
-  }
-
-  //footer
-  .indexFooter {
-    padding: 1rem 0px;
-    .footerContainer {
-      width: 100%;
-      .footerFlexContainer {
-        li {
-          width: 100%;
-          text-align: center;
-        }
-      }
-    }
-  }
-
-  //---------------- hamburger--------------------
+@media (max-width: 934px) {
+  /*--top navigation hamburger styling, applicable to index.html, blog.html, contact.html--*/
   .topNav {
-    z-index: 20;
-  }
-
-  .topNav {
-    position: fixed;
-    // position: sticky;
-    top: 0px;
-    width: 100%;
-    padding: 0;
-
-    .logo {
-      display: none;
+    .sideMenuContainer {
+      width: 100%;
+    }
+    ul {
+      width: 100%;
+      justify-content: center;
     }
   }
 
-  input[type="checkbox"]:checked ~ ul {
-    display: none;
-  }
-
-  .sideMenuContainer {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .indexHeader .hamburger {
-    visibility: visible;
-  }
-
-  .topNav ul {
-    background-color: $green-grey;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    li {
-      display: inline-block;
-    }
-    a {
-      padding: 0 1rem;
-      font-size: 1.5rem;
-    }
-  }
-
-  // header
+  // header of index.html
   .indexHeader .wrapper {
     width: 100%;
     min-height: 10vh;
@@ -239,18 +110,138 @@
       font-size: clamp(50px, 12vw, 100px);
     }
   }
+
+  // image & description section of index.html
+  .imgAndContent {
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+
+    .wrapper {
+      // border: 2px solid green;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+
+    .contentContainer1,
+    .contentContainer2 {
+      // border: 2px dotted goldenrod;
+      width: 100%;
+      text-align: center;
+    }
+    .imgContainer2 {
+      // border: 3px solid purple;
+      order: -1;
+    }
+    .contentContainer2 {
+      padding: 100px 20px;
+    }
+    .bridgeImage,
+    .lotusImage {
+      // border: 2px solid black;
+      max-width: 80%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  // willows journey section of index.html
+  .journey {
+    padding: 0px;
+    .journeyContainer {
+      .journeyPicContainer {
+        min-width: 100%;
+
+        .journeyImage {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+      .journeyDesc {
+        margin: 70px 0px;
+        text-align: center;
+        a {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  // gallery section of index.html
+  .gallery {
+    // border: 2px solid magenta;
+    padding: 30px 0px;
+    margin: 20px 0px;
+    .galleryContainer {
+      .flexContainer {
+        .listItem {
+          margin: 20px 0px 0px 0px;
+          min-width: 100%;
+        }
+      }
+    }
+  }
+
+  //footer section of index.html
+  .indexFooter {
+    padding: 1rem 0px;
+    .footerContainer {
+      width: 100%;
+      .footerFlexContainer {
+        li {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
-// *****************************************
+
+@media (max-width: 693px) {
+  /*-- top navigation hamburger styling, applicable to index.html, blog.html, contact.html-- */
+  .topNav ul a {
+    padding: 0.9rem;
+    font-size: 1.5rem;
+    transition: 0.3s;
+  }
+}
+
 @media (max-width: 650px) {
-  //BLOG styling
+  /*-- top navigation hamburger styling, applicable to index.html, blog.html, contact.html--*/
+  .indexHeader .hamburger {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+  .topNav ul {
+    background-color: $pine;
+    position: fixed;
+    top: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 25%;
+    z-index: 30;
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ ul {
+    display: flex;
+  }
+
+  // ----------------------------------
+  /*blog.html*/
+  //header styling of blog.html
   .blogTitleContainer {
     .wrapper {
       min-height: 40vh;
     }
   }
 
+  //main part of blog.html
   .date {
-    // border: 2px solid black;
     font-size: 1.6rem;
     margin: 20px 0px;
   }
@@ -265,20 +256,15 @@
       width: 100%;
     }
   }
-
   .longBlog {
     h2 {
-      // border: 2px solid red;
       font-size: 2.8rem;
-      // margin-bottom: 20px;
     }
   }
-
   .twoViewsContainer {
     .views {
       padding: 0px;
       flex-direction: column;
-
       .viewImageContainer {
         img {
           margin: 0 auto;
@@ -286,18 +272,14 @@
       }
     }
   }
-  // ------end of styling blog section
 
-  // contact styling
-
+  /*contact.html*/
+  // main styling of contact.html
   .contactMain .wrapper {
-    // border: 2px solid red;
     width: 100%;
     padding: 0px;
     .socialContainer {
       margin-top: 0px;
     }
-  } //end of contact styling
-
-  // index styling
+  }
 }

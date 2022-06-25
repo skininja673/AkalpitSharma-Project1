@@ -350,7 +350,7 @@ h3 {
 
 /*This is the common navigation styling, which is rendered on index.html, blog.html and contact.html*/
 .indexHeader {
-  background-color: salmon;
+  background-color: #345231;
 }
 
 .topNav {

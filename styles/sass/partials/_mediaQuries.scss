@@ -273,9 +273,6 @@
   // index.html: header section
   .indexHeader {
     .wrapper {
-      justify-content: center;
-      align-items: center;
-
       .titleImageContainer {
         display: flex;
         margin-top: 20px;
@@ -371,43 +368,11 @@
 }
 
 @media (max-width: 578px) {
-  /* INDEX.HTML STYLING */
-  // index.html: header section
+  /* INDEX.HTML */
+  // index.html: header
   .indexHeader {
     .wrapper {
       overflow: hidden;
-      justify-content: center;
-      align-items: center;
-
-      .titleImageContainer {
-        display: flex;
-        position: relative;
-        margin-top: 20px;
-        right: 110px;
-
-        .circular {
-          position: relative;
-          transform: rotate(15deg);
-          left: 0;
-        }
-
-        .title {
-          margin-top: 51px;
-          position: absolute;
-          top: 0;
-          font-size: 6rem;
-        }
-      }
-
-      .headerImageContainer {
-        margin-top: 20px;
-        position: relative;
-        left: 0%;
-
-        .headerImage {
-          width: 80%;
-        }
-      }
     }
   }
 }

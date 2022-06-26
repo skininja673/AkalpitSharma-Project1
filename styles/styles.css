@@ -348,7 +348,7 @@ h3 {
   padding: 1.5rem 0px 1.5rem;
 }
 
-/*This is the common navigation styling, which is rendered on index.html, blog.html and contact.html*/
+/*This is the common navigation styling, which is applicable on index.html, blog.html and contact.html*/
 .indexHeader {
   background-color: #345231;
 }
@@ -397,7 +397,7 @@ h3 {
   background-color: #1f1f1f;
   color: #f6f6f6;
   text-align: center;
-  padding: 15px;
+  padding: 15px 0px;
 }
 
 /* This partial styles the form section of blog.html and contact.html */
@@ -1128,14 +1128,6 @@ h3 {
   }
 
   /* INDEX.HTML STYLING */
-  .indexHeader .wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .indexHeader .wrapper .titleImageContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1221,42 +1213,8 @@ h3 {
   }
 }
 @media (max-width: 578px) {
-  /* INDEX.HTML STYLING */
+  /* INDEX.HTML */
   .indexHeader .wrapper {
     overflow: hidden;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .indexHeader .wrapper .titleImageContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    margin-top: 20px;
-    right: 110px;
-  }
-  .indexHeader .wrapper .titleImageContainer .circular {
-    position: relative;
-    -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
-    left: 0;
-  }
-  .indexHeader .wrapper .titleImageContainer .title {
-    margin-top: 51px;
-    position: absolute;
-    top: 0;
-    font-size: 6rem;
-  }
-  .indexHeader .wrapper .headerImageContainer {
-    margin-top: 20px;
-    position: relative;
-    left: 0%;
-  }
-  .indexHeader .wrapper .headerImageContainer .headerImage {
-    width: 80%;
   }
 }

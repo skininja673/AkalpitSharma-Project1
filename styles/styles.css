@@ -667,23 +667,22 @@ h3 {
   background-image: url(../assets/blog-image-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.blogTitleContainer .wrapper {
-  min-height: 10vh;
+  min-height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+}
+
+.blogTitleContainer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .blogTitle {
@@ -717,13 +716,16 @@ h3 {
 }
 .blogMain .twoAside,
 .blogMain .blogContainer {
-  margin: 120px 0px;
+  margin: 80px 0px;
 }
 .blogMain .longBlog {
   background-color: #fff;
   padding: 30px;
   border-bottom: 5px solid #709b6b;
   margin-bottom: 1.8rem;
+}
+.blogMain .longBlog h2 {
+  font-size: clamp(22px, 2.4vw, 35px);
 }
 .blogMain .twoAside .top,
 .blogMain .twoAside .bottom {
@@ -793,6 +795,16 @@ h3 {
   padding: 1px;
 }
 
+.contactTitleContainer {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .contactMain {
   background-color: #f6f6f6;
 }
@@ -805,7 +817,7 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 100px 0px;
+  padding: 80px 0px;
 }
 .contactMain .socialContainer {
   background-color: #fff;
@@ -838,6 +850,7 @@ h3 {
 }
 
 @media (max-width: 1307px) {
+  /*contact.html form*/
   .contactMain .wrapper .socialContainer {
     width: 100%;
   }
@@ -901,7 +914,7 @@ h3 {
   }
 }
 @media (max-width: 934px) {
-  /*--top navigation hamburger styling, applicable to index.html, blog.html, contact.html--*/
+  /*--top navigation hamburger styling, applicable to index.html, blog.html & contact.html--*/
   .topNav .sideMenuContainer {
     width: 100%;
   }
@@ -1026,6 +1039,17 @@ h3 {
     width: 100%;
     text-align: center;
   }
+
+  /* blog.html */
+  .blogTitleContainer .wrapper {
+    width: 90%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 @media (max-width: 693px) {
   /*-- top navigation hamburger styling, applicable to index.html, blog.html, contact.html-- */
@@ -1071,6 +1095,11 @@ h3 {
     display: flex;
   }
 
+  /*index.html*/
+  .contentContainer1 {
+    padding: 4rem 1rem;
+  }
+
   /*blog.html*/
   .blogTitleContainer .wrapper {
     min-height: 40vh;
@@ -1084,15 +1113,20 @@ h3 {
   .blogMain p {
     font-size: 1.8rem;
     text-align: center;
-    padding: 0px;
+    padding: 0px 1.5rem;
   }
   .blogMain .wrapper,
 .blogMain .twoAside {
     width: 100%;
   }
-
-  .longBlog h2 {
+  .blogMain .longBlog {
+    padding: 0px;
+  }
+  .blogMain .longBlog h2 {
     font-size: 2.8rem;
+  }
+  .blogMain .longBlog p {
+    min-width: 100%;
   }
 
   .twoViewsContainer .views {

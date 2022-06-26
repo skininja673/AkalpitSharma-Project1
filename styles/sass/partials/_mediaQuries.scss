@@ -1,6 +1,6 @@
 // media queries
 @media (max-width: 1307px) {
-  //contact.html form
+  /*contact.html form*/
   .contactMain {
     .wrapper {
       .socialContainer {
@@ -63,7 +63,7 @@
 }
 
 @media (max-width: 934px) {
-  /*--top navigation hamburger styling, applicable to index.html, blog.html, contact.html--*/
+  /*--top navigation hamburger styling, applicable to index.html, blog.html & contact.html--*/
   .topNav {
     .sideMenuContainer {
       width: 100%;
@@ -197,6 +197,16 @@
       }
     }
   }
+
+  /* blog.html */
+  // header of blog.html
+  .blogTitleContainer {
+    .wrapper {
+      width: 90%;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+  }
 }
 
 @media (max-width: 693px) {
@@ -232,6 +242,12 @@
   }
 
   // ----------------------------------
+  /*index.html*/
+  .contentContainer1 {
+    // border: 2px solid red;
+    padding: 4rem 1rem;
+  }
+
   /*blog.html*/
   //header styling of blog.html
   .blogTitleContainer {
@@ -249,16 +265,23 @@
     p {
       font-size: 1.8rem;
       text-align: center;
-      padding: 0px;
+      padding: 0px 1.5rem;
     }
     .wrapper,
     .twoAside {
       width: 100%;
     }
-  }
-  .longBlog {
-    h2 {
-      font-size: 2.8rem;
+
+    .longBlog {
+      // border: 1px solid red;
+      padding: 0px;
+      h2 {
+        font-size: 2.8rem;
+      }
+      p {
+        // border: 2px solid magenta;
+        min-width: 100%;
+      }
     }
   }
   .twoViewsContainer {

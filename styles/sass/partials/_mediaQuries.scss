@@ -1,6 +1,21 @@
 // media queries
 @media (max-width: 1307px) {
-  /*contact.html form*/
+  /* INDEX.HTML STYLING */
+  // index.html: header styling with headshot
+  .indexHeader {
+    .wrapper {
+      width: 95%;
+      .headerImageContainer {
+        right: 30px;
+      }
+      .title {
+        font-size: clamp(120px, 8vw, 150px);
+      }
+    }
+  }
+
+  /* CONTACT.HTML STYLING */
+  // contact.html: form styling
   .contactMain {
     .wrapper {
       .socialContainer {
@@ -30,7 +45,30 @@
 }
 
 @media (max-width: 1108px) {
-  /*blog.html styling*/
+  /* INDEX.HTML STYLING */
+  // index.html: header styling
+  .indexHeader {
+    .wrapper {
+      justify-content: center;
+      align-items: center;
+      padding-top: 5rem;
+      margin-top: 100px;
+
+      .headerImageContainer {
+        margin-top: 80px;
+      }
+      .title {
+        margin-top: 40px;
+      }
+      .titleImageContainer .circular {
+        top: 0;
+        left: 20%;
+      }
+    }
+  }
+
+  /* BLOG.HTML STYLING */
+  // blog.html: main styling
   .blogMain .wrapper {
     flex-direction: column;
   }
@@ -63,7 +101,8 @@
 }
 
 @media (max-width: 934px) {
-  /*--top navigation hamburger styling, applicable to index.html, blog.html & contact.html--*/
+  /* TOP NAVIGATION STYLING */
+  // hamburger styling applicable to index, blog & contact.html
   .topNav {
     .sideMenuContainer {
       width: 100%;
@@ -74,51 +113,42 @@
     }
   }
 
-  // header of index.html
-  .indexHeader .wrapper {
-    width: 100%;
-    min-height: 10vh;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    .titleImageContainer {
-      font-size: 20px;
-      margin-top: 100px;
-      z-index: 10;
-      position: relative;
-
-      img {
-        display: none;
-      }
-    }
-
-    .headerImageContainer {
+  /* INDEX.HTML STYLING*/
+  // index.html: header styling
+  .indexHeader {
+    .wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
       width: 100%;
-      margin: 0 auto;
-      padding: 1rem;
-      width: 60%;
 
-      img {
-        width: 100%;
-        margin: 0 auto;
+      .headerImageContainer {
+        margin-top: 80px;
       }
-    }
-    .title {
-      margin-top: 50px;
-      font-size: clamp(50px, 12vw, 100px);
+
+      .title {
+        margin-top: 50px;
+        position: relative;
+        font-size: clamp(50px, 8vw, 150px);
+      }
+      .titleImageContainer {
+        .circular {
+          top: 5%;
+          left: 30%;
+          width: 100px;
+          transform: rotate(15deg);
+        }
+      }
     }
   }
 
-  // image & description section of index.html
+  // index.html: image & description section
   .imgAndContent {
-    // border: 2px solid red;
     display: flex;
     flex-direction: column;
 
     .wrapper {
-      // border: 2px solid green;
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -127,12 +157,10 @@
 
     .contentContainer1,
     .contentContainer2 {
-      // border: 2px dotted goldenrod;
       width: 100%;
       text-align: center;
     }
     .imgContainer2 {
-      // border: 3px solid purple;
       order: -1;
     }
     .contentContainer2 {
@@ -140,14 +168,13 @@
     }
     .bridgeImage,
     .lotusImage {
-      // border: 2px solid black;
       max-width: 80%;
       text-align: center;
       margin: 0 auto;
     }
   }
 
-  // willows journey section of index.html
+  // index.html: willows journey section
   .journey {
     padding: 0px;
     .journeyContainer {
@@ -169,9 +196,8 @@
     }
   }
 
-  // gallery section of index.html
+  // index.html: gallery section
   .gallery {
-    // border: 2px solid magenta;
     padding: 30px 0px;
     margin: 20px 0px;
     .galleryContainer {
@@ -184,7 +210,7 @@
     }
   }
 
-  //footer section of index.html
+  // index.html: footer section
   .indexFooter {
     padding: 1rem 0px;
     .footerContainer {
@@ -198,8 +224,8 @@
     }
   }
 
-  /* blog.html */
-  // header of blog.html
+  /* BLOG.HTML STYLING */
+  // blog.html: header section
   .blogTitleContainer {
     .wrapper {
       width: 90%;
@@ -210,7 +236,8 @@
 }
 
 @media (max-width: 693px) {
-  /*-- top navigation hamburger styling, applicable to index.html, blog.html, contact.html-- */
+  /* TOP NAVIGATION STYLING */
+  // hamburger styling applicable to index, blog & contact.html
   .topNav ul a {
     padding: 0.9rem;
     font-size: 1.5rem;
@@ -219,7 +246,8 @@
 }
 
 @media (max-width: 650px) {
-  /*-- top navigation hamburger styling, applicable to index.html, blog.html, contact.html--*/
+  /* TOP NAVIGATION STYLING */
+  // hamburger styling applicable to index, blog & contact.html
   .indexHeader .hamburger {
     display: block;
   }
@@ -241,22 +269,59 @@
     display: flex;
   }
 
-  // ----------------------------------
-  /*index.html*/
+  /* INDEX.HTML STYLING */
+  // index.html: header section
+  .indexHeader {
+    .wrapper {
+      justify-content: center;
+      align-items: center;
+
+      .titleImageContainer {
+        display: flex;
+        margin-top: 20px;
+        position: relative;
+        right: 110px;
+
+        .circular {
+          position: relative;
+          transform: rotate(15deg);
+          left: 0;
+        }
+        .title {
+          margin-top: 51px;
+          position: absolute;
+          top: 0;
+          font-size: 6rem;
+        }
+      }
+
+      .headerImageContainer {
+        margin-top: 20px;
+        min-width: 100%;
+        position: relative;
+        left: 0%;
+
+        .headerImage {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  // index.html: content container 1
   .contentContainer1 {
-    // border: 2px solid red;
     padding: 4rem 1rem;
   }
 
-  /*blog.html*/
-  //header styling of blog.html
+  /* BLOG.HTML STYLING*/
+  // blog.html: header section
   .blogTitleContainer {
     .wrapper {
       min-height: 40vh;
     }
   }
 
-  //main part of blog.html
+  // blog.html: main section
   .date {
     font-size: 1.6rem;
     margin: 20px 0px;
@@ -273,13 +338,11 @@
     }
 
     .longBlog {
-      // border: 1px solid red;
       padding: 0px;
       h2 {
         font-size: 2.8rem;
       }
       p {
-        // border: 2px solid magenta;
         min-width: 100%;
       }
     }
@@ -296,13 +359,55 @@
     }
   }
 
-  /*contact.html*/
-  // main styling of contact.html
+  /* CONTACT.HTML STYLING */
+  // contact.html: main styling
   .contactMain .wrapper {
     width: 100%;
     padding: 0px;
     .socialContainer {
       margin-top: 0px;
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  /* INDEX.HTML STYLING */
+  // index.html: header section
+  .indexHeader {
+    .wrapper {
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+
+      .titleImageContainer {
+        display: flex;
+        position: relative;
+        margin-top: 20px;
+        right: 110px;
+
+        .circular {
+          position: relative;
+          transform: rotate(15deg);
+          left: 0;
+        }
+
+        .title {
+          margin-top: 51px;
+          position: absolute;
+          top: 0;
+          font-size: 6rem;
+        }
+      }
+
+      .headerImageContainer {
+        margin-top: 20px;
+        position: relative;
+        left: 0%;
+
+        .headerImage {
+          width: 80%;
+        }
+      }
     }
   }
 }

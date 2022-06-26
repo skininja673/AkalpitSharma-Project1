@@ -1,4 +1,4 @@
-/*This is the index.html styling sheet. The  navigation styling was completed at _topNavigation.scss which is rendered on each html extension pages*/
+/* This is the index.html styling sheet. The  navigation styling was completed at _topNavigation.scss which is rendered on each html extension pages */
 
 // Styling header
 .indexHeader {
@@ -8,16 +8,18 @@
 .indexHeader {
   .wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    position: relative;
 
     .titleImageContainer {
-      position: relative;
       .circular {
         position: absolute;
         width: 150px;
-        top: -90px;
-        left: -60px;
+        top: 36%;
+        left: 0px;
+        transform: rotate(10deg);
       }
     }
 
@@ -26,19 +28,21 @@
       color: $white-shade;
       text-transform: uppercase;
       font-family: $primary-font;
-      font-size: clamp(90px, 8.5vw, 150px);
+      font-size: 14rem;
+      margin-left: 45px;
     }
 
     .headerImageContainer {
       position: relative;
       top: 30px;
+      right: 20px;
     }
 
     // headshot image styling
     .headerImage {
       box-shadow: 15px 15px $white;
-      width: 85%;
-      margin-left: 50px;
+      width: 100%;
+      margin-left: 20px;
     }
   }
 }
@@ -93,7 +97,6 @@
   background-color: $white-shade;
 }
 .journeyContainer {
-  // border: 2px solid red;
   display: flex;
   flex-wrap: wrap;
 
@@ -109,13 +112,9 @@
   }
   .journeyDesc {
     flex: 1 1 calc(70%);
-    // margin-left: 37.5px;
-    // width: calc(70% - 75px);
-    // margin-left: 75px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     a {
       align-self: flex-start;
     }
@@ -143,7 +142,6 @@
       justify-content: center;
 
       .listItem {
-        // flex: 1 1 calc(100% / 3 - 10px);
         width: calc(100% / 3 - 10px);
         margin: 5px;
         min-width: 200px;
@@ -153,27 +151,19 @@
   }
 }
 
-// footer styling
 .indexFooter {
-  // border: 2px solid red;
   background-color: $white-shade;
   padding: 100px;
 
   .footerFlexContainer {
-    // border: 2px solid magenta;
     display: flex;
     flex-wrap: wrap;
 
     li {
-      // border: 2px solid black;
-      // flex: 1 1 calc(50% - 20px);
       width: calc(50% - 20px);
       margin: 10px;
-      // min-width: 475.5px;
-      // min-width: 100px;
       display: flex;
 
-      // tiny yellow circular icon styling
       .iconContainer {
         width: 140px;
         height: 50px;

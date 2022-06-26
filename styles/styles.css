@@ -387,7 +387,7 @@ h3 {
   font-size: 3rem;
   color: #e4a436;
   margin: 0.5rem;
-  right: 10px;
+  right: 0;
   z-index: 10;
   display: none;
 }
@@ -400,7 +400,7 @@ h3 {
   padding: 15px;
 }
 
-/*This partial styles the form section of blog.html and contact.html*/
+/* This partial styles the form section of blog.html and contact.html */
 .formContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -461,7 +461,7 @@ h3 {
   opacity: 1;
 }
 
-/*This is the index.html styling sheet. The  navigation styling was completed at _topNavigation.scss which is rendered on each html extension pages*/
+/* This is the index.html styling sheet. The  navigation styling was completed at _topNavigation.scss which is rendered on each html extension pages */
 .indexHeader {
   background-color: #345231;
 }
@@ -470,37 +470,41 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.indexHeader .wrapper .titleImageContainer {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
 }
 .indexHeader .wrapper .titleImageContainer .circular {
   position: absolute;
   width: 150px;
-  top: -90px;
-  left: -60px;
+  top: 36%;
+  left: 0px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 .indexHeader .wrapper .title {
   color: #f6f6f6;
   text-transform: uppercase;
   font-family: "Abril Fatface", cursive;
-  font-size: clamp(90px, 8.5vw, 150px);
+  font-size: 14rem;
+  margin-left: 45px;
 }
 .indexHeader .wrapper .headerImageContainer {
   position: relative;
   top: 30px;
+  right: 20px;
 }
 .indexHeader .wrapper .headerImage {
   -webkit-box-shadow: 15px 15px #fff;
           box-shadow: 15px 15px #fff;
-  width: 85%;
-  margin-left: 50px;
+  width: 100%;
+  margin-left: 20px;
 }
 
 /* end of <header> section styling 
@@ -795,6 +799,7 @@ h3 {
   padding: 1px;
 }
 
+/* contact styling of contact.html */
 .contactTitleContainer {
   background-image: url(../assets/contact-image-1.jpg);
   background-repeat: no-repeat;
@@ -850,7 +855,18 @@ h3 {
 }
 
 @media (max-width: 1307px) {
-  /*contact.html form*/
+  /* INDEX.HTML STYLING */
+  .indexHeader .wrapper {
+    width: 95%;
+  }
+  .indexHeader .wrapper .headerImageContainer {
+    right: 30px;
+  }
+  .indexHeader .wrapper .title {
+    font-size: clamp(120px, 8vw, 150px);
+  }
+
+  /* CONTACT.HTML STYLING */
   .contactMain .wrapper .socialContainer {
     width: 100%;
   }
@@ -881,7 +897,29 @@ h3 {
   }
 }
 @media (max-width: 1108px) {
-  /*blog.html styling*/
+  /* INDEX.HTML STYLING */
+  .indexHeader .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 5rem;
+    margin-top: 100px;
+  }
+  .indexHeader .wrapper .headerImageContainer {
+    margin-top: 80px;
+  }
+  .indexHeader .wrapper .title {
+    margin-top: 40px;
+  }
+  .indexHeader .wrapper .titleImageContainer .circular {
+    top: 0;
+    left: 20%;
+  }
+
+  /* BLOG.HTML STYLING */
   .blogMain .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -914,7 +952,7 @@ h3 {
   }
 }
 @media (max-width: 934px) {
-  /*--top navigation hamburger styling, applicable to index.html, blog.html & contact.html--*/
+  /* TOP NAVIGATION STYLING */
   .topNav .sideMenuContainer {
     width: 100%;
   }
@@ -925,41 +963,35 @@ h3 {
             justify-content: center;
   }
 
+  /* INDEX.HTML STYLING*/
   .indexHeader .wrapper {
-    width: 100%;
-    min-height: 10vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .indexHeader .wrapper .titleImageContainer {
-    font-size: 20px;
-    margin-top: 100px;
-    z-index: 10;
-    position: relative;
-  }
-  .indexHeader .wrapper .titleImageContainer img {
-    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0px;
+    width: 100%;
   }
   .indexHeader .wrapper .headerImageContainer {
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    width: 60%;
-  }
-  .indexHeader .wrapper .headerImageContainer img {
-    width: 100%;
-    margin: 0 auto;
+    margin-top: 80px;
   }
   .indexHeader .wrapper .title {
     margin-top: 50px;
-    font-size: clamp(50px, 12vw, 100px);
+    position: relative;
+    font-size: clamp(50px, 8vw, 150px);
+  }
+  .indexHeader .wrapper .titleImageContainer .circular {
+    top: 5%;
+    left: 30%;
+    width: 100px;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
   }
 
   .imgAndContent {
@@ -1040,7 +1072,7 @@ h3 {
     text-align: center;
   }
 
-  /* blog.html */
+  /* BLOG.HTML STYLING */
   .blogTitleContainer .wrapper {
     width: 90%;
     -webkit-box-pack: end;
@@ -1052,7 +1084,7 @@ h3 {
   }
 }
 @media (max-width: 693px) {
-  /*-- top navigation hamburger styling, applicable to index.html, blog.html, contact.html-- */
+  /* TOP NAVIGATION STYLING */
   .topNav ul a {
     padding: 0.9rem;
     font-size: 1.5rem;
@@ -1061,7 +1093,7 @@ h3 {
   }
 }
 @media (max-width: 650px) {
-  /*-- top navigation hamburger styling, applicable to index.html, blog.html, contact.html--*/
+  /* TOP NAVIGATION STYLING */
   .indexHeader .hamburger {
     display: block;
   }
@@ -1095,12 +1127,51 @@ h3 {
     display: flex;
   }
 
-  /*index.html*/
+  /* INDEX.HTML STYLING */
+  .indexHeader .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .indexHeader .wrapper .titleImageContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    right: 110px;
+  }
+  .indexHeader .wrapper .titleImageContainer .circular {
+    position: relative;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+    left: 0;
+  }
+  .indexHeader .wrapper .titleImageContainer .title {
+    margin-top: 51px;
+    position: absolute;
+    top: 0;
+    font-size: 6rem;
+  }
+  .indexHeader .wrapper .headerImageContainer {
+    margin-top: 20px;
+    min-width: 100%;
+    position: relative;
+    left: 0%;
+  }
+  .indexHeader .wrapper .headerImageContainer .headerImage {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .contentContainer1 {
     padding: 4rem 1rem;
   }
 
-  /*blog.html*/
+  /* BLOG.HTML STYLING*/
   .blogTitleContainer .wrapper {
     min-height: 40vh;
   }
@@ -1140,12 +1211,52 @@ h3 {
     margin: 0 auto;
   }
 
-  /*contact.html*/
+  /* CONTACT.HTML STYLING */
   .contactMain .wrapper {
     width: 100%;
     padding: 0px;
   }
   .contactMain .wrapper .socialContainer {
     margin-top: 0px;
+  }
+}
+@media (max-width: 578px) {
+  /* INDEX.HTML STYLING */
+  .indexHeader .wrapper {
+    overflow: hidden;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .indexHeader .wrapper .titleImageContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    right: 110px;
+  }
+  .indexHeader .wrapper .titleImageContainer .circular {
+    position: relative;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+    left: 0;
+  }
+  .indexHeader .wrapper .titleImageContainer .title {
+    margin-top: 51px;
+    position: absolute;
+    top: 0;
+    font-size: 6rem;
+  }
+  .indexHeader .wrapper .headerImageContainer {
+    margin-top: 20px;
+    position: relative;
+    left: 0%;
+  }
+  .indexHeader .wrapper .headerImageContainer .headerImage {
+    width: 80%;
   }
 }

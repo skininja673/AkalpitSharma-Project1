@@ -1,4 +1,4 @@
-/*This is the common navigation styling, which is applicable on index.html, blog.html and contact.html*/
+/* This is the common navigation styling, which is applicable to index.html, blog.html and contact.html */
 
 .indexHeader {
   background-color: $pine;
@@ -10,7 +10,6 @@
 
   ul {
     display: flex;
-
     a {
       font-size: 2rem;
       font-weight: 700;
@@ -22,7 +21,8 @@
       font-family: $primary-font;
     }
   }
-  & a:hover {
+  & a:hover,
+  a:focus {
     color: $accent-color;
     transition: 0.3s ease;
   }

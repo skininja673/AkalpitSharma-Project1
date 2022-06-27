@@ -334,21 +334,21 @@ h3 {
   background-color: #e4a436;
   color: #1f1f1f;
   font-size: 2rem;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
 }
-.button:hover {
+.button:hover, .button:focus {
   color: #e4a436;
   border: 0.5px solid #e4a436;
   background-color: #fff;
-  -webkit-transition: 0.1 0.5s;
-  transition: 0.1 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .wrapper p {
   padding: 1.5rem 0px 1.5rem;
 }
 
-/*This is the common navigation styling, which is applicable on index.html, blog.html and contact.html*/
+/* This is the common navigation styling, which is applicable to index.html, blog.html and contact.html */
 .indexHeader {
   background-color: #345231;
 }
@@ -376,7 +376,8 @@ h3 {
   font-size: 4rem;
   font-family: "Abril Fatface", cursive;
 }
-.topNav a:hover {
+.topNav a:hover,
+.topNav a:focus {
   color: #e4a436;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -858,12 +859,28 @@ h3 {
   /* INDEX.HTML STYLING */
   .indexHeader .wrapper {
     width: 95%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .indexHeader .wrapper .headerImageContainer {
-    right: 30px;
+    right: 10px;
   }
   .indexHeader .wrapper .title {
     font-size: clamp(120px, 8vw, 150px);
+  }
+
+  /* BLOG.HTML STYLING */
+  .blogTitleContainer .wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 
   /* CONTACT.HTML STYLING */
@@ -920,6 +937,15 @@ h3 {
   }
 
   /* BLOG.HTML STYLING */
+  .blogTitleContainer .wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
   .blogMain .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -965,33 +991,18 @@ h3 {
 
   /* INDEX.HTML STYLING*/
   .indexHeader .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 0px;
-    width: 100%;
-  }
-  .indexHeader .wrapper .headerImageContainer {
-    margin-top: 80px;
+    margin-top: 20px;
   }
   .indexHeader .wrapper .title {
     margin-top: 50px;
-    position: relative;
     font-size: clamp(50px, 8vw, 150px);
   }
   .indexHeader .wrapper .titleImageContainer .circular {
     top: 5%;
     left: 30%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
     width: 100px;
-    -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
   }
 
   .imgAndContent {
@@ -1074,13 +1085,12 @@ h3 {
 
   /* BLOG.HTML STYLING */
   .blogTitleContainer .wrapper {
-    width: 90%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 @media (max-width: 693px) {
@@ -1090,6 +1100,33 @@ h3 {
     font-size: 1.5rem;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+  }
+
+  /* INDEX.HTML STYLING*/
+  .indexHeader .wrapper {
+    padding: 20px;
+  }
+  .indexHeader .wrapper .headerImageContainer {
+    margin-top: 0px;
+    width: 90%;
+  }
+  .indexHeader .wrapper .headerImageContainer .headerImage {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .indexHeader .wrapper .titleImageContainer .circular {
+    position: static;
+    width: 7rem;
+    top: 8%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .indexHeader .wrapper .title {
+    font-size: clamp(50px, 11vw, 150px);
+    position: relative;
+    top: -108px;
+    left: -26px;
+    margin-bottom: 0px;
   }
 }
 @media (max-width: 650px) {
@@ -1127,45 +1164,19 @@ h3 {
     display: flex;
   }
 
-  /* INDEX.HTML STYLING */
-  .indexHeader .wrapper .titleImageContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 20px;
-    position: relative;
-    right: 110px;
-  }
-  .indexHeader .wrapper .titleImageContainer .circular {
-    position: relative;
-    -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
-    left: 0;
-  }
-  .indexHeader .wrapper .titleImageContainer .title {
-    margin-top: 51px;
-    position: absolute;
-    top: 0;
-    font-size: 6rem;
-  }
-  .indexHeader .wrapper .headerImageContainer {
-    margin-top: 20px;
-    min-width: 100%;
-    position: relative;
-    left: 0%;
-  }
-  .indexHeader .wrapper .headerImageContainer .headerImage {
-    width: 80%;
-    margin: 0 auto;
-  }
-
   .contentContainer1 {
     padding: 4rem 1rem;
   }
 
-  /* BLOG.HTML STYLING*/
+  /* BLOG.HTML STYLING */
   .blogTitleContainer .wrapper {
-    min-height: 40vh;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 0px;
   }
 
   .date {
@@ -1210,11 +1221,5 @@ h3 {
   }
   .contactMain .wrapper .socialContainer {
     margin-top: 0px;
-  }
-}
-@media (max-width: 578px) {
-  /* INDEX.HTML */
-  .indexHeader .wrapper {
-    overflow: hidden;
   }
 }

@@ -2,15 +2,29 @@
 @media (max-width: 1307px) {
   /* INDEX.HTML STYLING */
   // index.html: header styling with headshot
+
   .indexHeader {
     .wrapper {
       width: 95%;
+      justify-content: center;
+      align-items: center;
+
       .headerImageContainer {
-        right: 30px;
+        right: 10px;
       }
+
       .title {
         font-size: clamp(120px, 8vw, 150px);
       }
+    }
+  }
+
+  /* BLOG.HTML STYLING */
+  // blog.html: header styling
+  .blogTitleContainer {
+    .wrapper {
+      justify-content: flex-start;
+      align-items: flex-end;
     }
   }
 
@@ -68,6 +82,14 @@
   }
 
   /* BLOG.HTML STYLING */
+  // blog.html: header styling
+  .blogTitleContainer {
+    .wrapper {
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+  }
+
   // blog.html: main styling
   .blogMain .wrapper {
     flex-direction: column;
@@ -117,27 +139,19 @@
   // index.html: header styling
   .indexHeader {
     .wrapper {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 0px;
-      width: 100%;
-
-      .headerImageContainer {
-        margin-top: 80px;
-      }
+      // border: 2px dotted red;
+      margin-top: 20px;
 
       .title {
         margin-top: 50px;
-        position: relative;
         font-size: clamp(50px, 8vw, 150px);
       }
       .titleImageContainer {
         .circular {
           top: 5%;
           left: 30%;
+          transform: rotate(0deg);
           width: 100px;
-          transform: rotate(15deg);
         }
       }
     }
@@ -225,12 +239,11 @@
   }
 
   /* BLOG.HTML STYLING */
-  // blog.html: header section
+  // blog.html: header styling
   .blogTitleContainer {
     .wrapper {
-      width: 90%;
-      justify-content: flex-end;
-      align-items: flex-start;
+      justify-content: flex-start;
+      align-items: flex-end;
     }
   }
 }
@@ -242,6 +255,45 @@
     padding: 0.9rem;
     font-size: 1.5rem;
     transition: 0.3s;
+  }
+
+  /* INDEX.HTML STYLING*/
+  // index.html: header section
+  .indexHeader {
+    .wrapper {
+      padding: 20px;
+      .headerImageContainer {
+        margin-top: 0px;
+        // border: 2px dotted yellow;
+        width: 90%;
+        // position: static;
+
+        .headerImage {
+          // border: 3px solid magenta;
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+      .titleImageContainer {
+        .circular {
+          position: static;
+          // border: 2px solid red;
+          width: 7rem;
+          top: 8%;
+          // left: 29%;
+          // bottom: 10%;
+          transform: rotate(0deg);
+        }
+      }
+      .title {
+        // border: 2px solid magenta;
+        font-size: clamp(50px, 11vw, 150px);
+        position: relative;
+        top: -108px;
+        left: -26px;
+        margin-bottom: 0px;
+      }
+    }
   }
 }
 
@@ -269,52 +321,18 @@
     display: flex;
   }
 
-  /* INDEX.HTML STYLING */
-  // index.html: header section
-  .indexHeader {
-    .wrapper {
-      .titleImageContainer {
-        display: flex;
-        margin-top: 20px;
-        position: relative;
-        right: 110px;
-
-        .circular {
-          position: relative;
-          transform: rotate(15deg);
-          left: 0;
-        }
-        .title {
-          margin-top: 51px;
-          position: absolute;
-          top: 0;
-          font-size: 6rem;
-        }
-      }
-
-      .headerImageContainer {
-        margin-top: 20px;
-        min-width: 100%;
-        position: relative;
-        left: 0%;
-
-        .headerImage {
-          width: 80%;
-          margin: 0 auto;
-        }
-      }
-    }
-  }
   // index.html: content container 1
   .contentContainer1 {
     padding: 4rem 1rem;
   }
 
-  /* BLOG.HTML STYLING*/
-  // blog.html: header section
+  /* BLOG.HTML STYLING */
+  // blog.html: header styling
   .blogTitleContainer {
     .wrapper {
-      min-height: 40vh;
+      justify-content: flex-start;
+      align-items: flex-end;
+      padding: 0px;
     }
   }
 
@@ -363,16 +381,6 @@
     padding: 0px;
     .socialContainer {
       margin-top: 0px;
-    }
-  }
-}
-
-@media (max-width: 578px) {
-  /* INDEX.HTML */
-  // index.html: header
-  .indexHeader {
-    .wrapper {
-      overflow: hidden;
     }
   }
 }

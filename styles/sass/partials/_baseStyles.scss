@@ -56,7 +56,8 @@ h3 {
 
 .button {
   @include orangeButton;
-  &:hover {
+  &:hover,
+  &:focus {
     @include orangeButtonHover;
   }
 }

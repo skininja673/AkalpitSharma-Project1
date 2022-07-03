@@ -2,49 +2,49 @@
 
 // Styling header
 .indexHeader {
-  background-color: $pine;
+      background-color: $pine;
 }
 
 .indexHeader {
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
+      .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
 
-    .titleImageContainer {
-      .circular {
-        position: absolute;
-        width: 150px;
-        top: 36%;
-        left: 0px;
-        transform: rotate(10deg);
+            .titleImageContainer {
+                  .circular {
+                        position: absolute;
+                        width: 150px;
+                        top: 36%;
+                        left: 0px;
+                        transform: rotate(10deg);
+                  }
+            }
+
+            // big title 'Willow' styling
+            .title {
+                  color: $white-shade;
+                  text-transform: uppercase;
+                  font-family: $primary-font;
+                  font-size: 14rem;
+                  margin-left: 45px;
+            }
+
+            .headerImageContainer {
+                  position: relative;
+                  top: 30px;
+                  right: 20px;
+            }
+
+            // headshot image styling
+            .headerImage {
+                  box-shadow: 15px 15px $white;
+                  width: 100%;
+                  margin-left: 20px;
+            }
       }
-    }
-
-    // big title 'Willow' styling
-    .title {
-      color: $white-shade;
-      text-transform: uppercase;
-      font-family: $primary-font;
-      font-size: 14rem;
-      margin-left: 45px;
-    }
-
-    .headerImageContainer {
-      position: relative;
-      top: 30px;
-      right: 20px;
-    }
-
-    // headshot image styling
-    .headerImage {
-      box-shadow: 15px 15px $white;
-      width: 100%;
-      margin-left: 20px;
-    }
-  }
 }
 /* end of <header> section styling 
    start of <main> section styling
@@ -52,130 +52,131 @@
 
 // styling "who's willow" section
 .about {
-  background-color: $white-shade;
-  text-align: center;
-  padding-top: 80px;
-  padding-bottom: 150px;
+      background-color: $white-shade;
+      text-align: center;
+      padding-top: 80px;
+      padding-bottom: 150px;
 }
 
 // 'favourite things' and 'bucket list' styling
 .imgAndContent {
-  background-color: $white;
+      background-color: $white;
 }
 
 .imgAndContentContainer1,
 .imgAndContentContainer2 {
-  display: flex;
+      display: flex;
 }
 
 .contentContainer1 {
-  width: 50%;
-  padding: 75px;
+      width: 50%;
+      padding: 75px;
 }
 
 .contentContainer2 {
-  width: 50%;
-  padding: 0px 75px;
-  text-align: right;
+      width: 50%;
+      padding: 0px 75px;
+      text-align: right;
 }
 
 .imgContainer1 {
-  position: relative;
-  top: -45px;
+      position: relative;
+      top: -45px;
 }
 .bridgeImage {
-  box-shadow: 20px 20px $green-grey, -400px 20px $green-grey;
+      box-shadow: 20px 20px $green-grey, -400px 20px $green-grey;
 }
 
 .lotusImage {
-  box-shadow: 20px 20px $pine, 400px 20px $pine;
+      box-shadow: 20px 20px $pine, 400px 20px $pine;
 }
 
 // styling "willow's journey" section
 .journey {
-  padding: 100px 0px;
-  background-color: $white-shade;
+      padding: 100px 0px;
+      background-color: $white-shade;
 }
 .journeyContainer {
-  display: flex;
-  flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
 
-  .journeyPicContainer {
-    flex: 1 1 calc(30% - 75px);
+      .journeyPicContainer {
+            flex: 1 1 calc(30% - 75px);
 
-    margin-right: 75px;
-    min-width: 180.5px;
+            margin-right: 75px;
+            min-width: 180.5px;
 
-    .journeyImage {
-      box-shadow: 20px 20px $green-grey;
-    }
-  }
-  .journeyDesc {
-    flex: 1 1 calc(70%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    a {
-      align-self: flex-start;
-    }
-  }
+            .journeyImage {
+                  box-shadow: 20px 20px $green-grey;
+            }
+      }
+      .journeyDesc {
+            flex: 1 1 calc(70%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            a {
+                  align-self: flex-start;
+            }
+      }
 }
 
 // full-bleed-background image styling
 .fullBleed {
-  min-height: 20vh;
-  background-image: url(../assets/home-image-5.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
+      min-height: 20vh;
+      background-image: url(../assets/home-image-5.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: scroll;
 }
 
 // 3-pics gallery section styling
 .gallery {
-  background-color: $white;
-  padding: 100px;
-  .galleryContainer {
-    .flexContainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      background-color: $white;
+      padding: 100px;
+      .galleryContainer {
+            .flexContainer {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
 
-      .listItem {
-        width: calc(100% / 3 - 10px);
-        margin: 5px;
-        min-width: 200px;
-        flex-grow: 1;
+                  .listItem {
+                        width: calc(100% / 3 - 10px);
+                        margin: 5px;
+                        min-width: 200px;
+                        flex-grow: 1;
+                  }
+            }
       }
-    }
-  }
 }
 
+// footer section
 .indexFooter {
-  background-color: $white-shade;
-  padding: 100px;
+      background-color: $white-shade;
+      padding: 100px;
 
-  .footerFlexContainer {
-    display: flex;
-    flex-wrap: wrap;
+      .footerFlexContainer {
+            display: flex;
+            flex-wrap: wrap;
 
-    li {
-      width: calc(50% - 20px);
-      margin: 10px;
-      display: flex;
+            li {
+                  width: calc(50% - 20px);
+                  margin: 10px;
+                  display: flex;
 
-      .iconContainer {
-        width: 140px;
-        height: 50px;
-        background-color: $accent-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
+                  .iconContainer {
+                        width: 140px;
+                        height: 50px;
+                        background-color: $accent-color;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                  }
+                  .iconContent {
+                        padding-left: 2rem;
+                  }
+            }
       }
-      .iconContent {
-        padding-left: 2rem;
-      }
-    }
-  }
 }

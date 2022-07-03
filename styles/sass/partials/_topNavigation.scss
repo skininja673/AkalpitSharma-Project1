@@ -1,41 +1,41 @@
 /* This is the common navigation styling, which is applicable to index.html, blog.html and contact.html */
 
 .indexHeader {
-  background-color: $pine;
+      background-color: $pine;
 }
 
 .topNav {
-  display: flex;
-  justify-content: center;
+      display: flex;
+      justify-content: center;
 
-  ul {
-    display: flex;
-    a {
-      font-size: 2rem;
-      font-weight: 700;
-      padding: 25px;
-      color: $white-shade;
-    }
-    .logo {
-      font-size: 4rem;
-      font-family: $primary-font;
-    }
-  }
-  & a:hover,
-  a:focus {
-    color: $accent-color;
-    transition: 0.3s ease;
-  }
+      ul {
+            display: flex;
+            a {
+                  font-size: 2rem;
+                  font-weight: 700;
+                  padding: 25px;
+                  color: $white-shade;
+            }
+            .logo {
+                  font-size: 4rem;
+                  font-family: $primary-font;
+            }
+      }
+      & a:hover,
+      a:focus {
+            color: $accent-color;
+            transition: 0.3s ease;
+      }
 }
 
 // hamburger's label <i> styling
 // and removing it
 .indexHeader .hamburger {
-  position: fixed;
-  font-size: 3rem;
-  color: $accent-color;
-  margin: 0.5rem;
-  right: 0;
-  z-index: 10;
-  display: none;
+      position: fixed;
+      font-size: 3rem;
+      color: $accent-color;
+      margin: 0.5rem;
+      right: 0;
+      z-index: 10;
+      display: none;
 }

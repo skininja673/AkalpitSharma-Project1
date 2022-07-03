@@ -1,49 +1,50 @@
 /* contact styling of contact.html */
 
 .contactTitleContainer {
-  background-image: url(../assets/contact-image-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 50vh;
-  display: flex;
+      background-image: url(../assets/contact-image-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 50vh;
+      display: flex;
 }
 
 .contactMain {
-  background-color: $white-shade;
+      background-color: $white-shade;
 
-  .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 80px 0px;
-  }
-  .socialContainer {
-    background-color: $white;
-    padding: 40px 25px;
-    margin-top: 10px;
-    align-self: flex-start;
-
-    .socialIconsContainer {
-      display: flex;
-
-      a {
-        padding-right: 2.5rem;
-        margin-right: 1rem;
-        font-size: 3rem;
-        color: $pine;
-        transition: 0.2s;
-        &:hover {
-          color: $green-grey;
-        }
+      .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 80px 0px;
       }
-    }
-    .information {
-      .e-mail {
-        font-weight: 700;
+      .socialContainer {
+            background-color: $white;
+            padding: 40px 25px;
+            margin-top: 10px;
+            align-self: flex-start;
+
+            .socialIconsContainer {
+                  display: flex;
+
+                  a {
+                        padding-right: 2.5rem;
+                        margin-right: 1rem;
+                        font-size: 3rem;
+                        color: $pine;
+                        transition: 0.2s;
+                        &:hover,
+                        &:focus {
+                              color: $green-grey;
+                        }
+                  }
+            }
+            .information {
+                  .e-mail {
+                        font-weight: 700;
+                  }
+            }
       }
-    }
-  }
-  .contactMeForm {
-    width: 70%;
-  }
+      .contactMeForm {
+            width: 70%;
+      }
 }

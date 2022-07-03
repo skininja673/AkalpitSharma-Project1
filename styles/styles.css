@@ -855,7 +855,7 @@ h3 {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.contactMain .socialContainer .socialIconsContainer a:hover {
+.contactMain .socialContainer .socialIconsContainer a:hover, .contactMain .socialContainer .socialIconsContainer a:focus {
   color: #709b6b;
 }
 .contactMain .socialContainer .information .e-mail {

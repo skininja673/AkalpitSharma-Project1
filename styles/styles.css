@@ -308,8 +308,8 @@ ul {
   position: absolute;
   left: -1000px;
   top: 5px;
-  background-color: white;
-  color: black;
+  background-color: #f6f6f6;
+  color: #1f1f1f;
   z-index: 10;
 }
 .skip-link:focus {
@@ -431,8 +431,10 @@ h3 {
   margin: 10px 0px;
   border: none;
 }
-.formContainer .name:hover,
-.formContainer .email:hover {
+.formContainer .name:hover, .formContainer .name:focus,
+.formContainer .email:hover,
+.formContainer .email:focus {
+  outline: none;
   border: 1.8px solid #709b6b;
 }
 .formContainer textarea {
@@ -442,7 +444,8 @@ h3 {
   font-size: 2rem;
   border: none;
 }
-.formContainer textarea:hover {
+.formContainer textarea:hover, .formContainer textarea:focus {
+  outline: none;
   border: 1.8px solid #709b6b;
 }
 .formContainer .postComment {

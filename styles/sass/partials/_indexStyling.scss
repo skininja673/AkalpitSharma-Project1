@@ -15,7 +15,7 @@
 
             .titleImageContainer {
                   .circular {
-                        position: absolute;
+                        position: static;
                         width: 150px;
                         top: 36%;
                         left: 0px;
@@ -25,11 +25,13 @@
 
             // big title 'Willow' styling
             .title {
+                  position: relative;
                   color: $white-shade;
                   text-transform: uppercase;
                   font-family: $primary-font;
                   font-size: 14rem;
                   margin-left: 45px;
+                  top: -108px;
             }
 
             .headerImageContainer {

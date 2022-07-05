@@ -492,7 +492,7 @@ h3 {
   position: relative;
 }
 .indexHeader .wrapper .titleImageContainer .circular {
-  position: absolute;
+  position: static;
   width: 150px;
   top: 36%;
   left: 0px;
@@ -500,11 +500,13 @@ h3 {
           transform: rotate(10deg);
 }
 .indexHeader .wrapper .title {
+  position: relative;
   color: #f6f6f6;
   text-transform: uppercase;
   font-family: "Abril Fatface", cursive;
   font-size: 14rem;
   margin-left: 45px;
+  top: -108px;
 }
 .indexHeader .wrapper .headerImageContainer {
   position: relative;
@@ -865,22 +867,14 @@ h3 {
   width: 70%;
 }
 
-@media (max-width: 1307px) {
+@media (max-width: 1310px) {
   /* INDEX.HTML STYLING */
   .indexHeader .wrapper {
+    margin-top: 3rem;
     width: 95%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .indexHeader .wrapper .headerImageContainer {
-    right: 10px;
-  }
-  .indexHeader .wrapper .title {
-    font-size: clamp(120px, 8vw, 150px);
   }
 
   /* BLOG.HTML STYLING */
@@ -924,28 +918,6 @@ h3 {
   }
 }
 @media (max-width: 1108px) {
-  /* INDEX.HTML STYLING */
-  .indexHeader .wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 5rem;
-    margin-top: 100px;
-  }
-  .indexHeader .wrapper .headerImageContainer {
-    margin-top: 80px;
-  }
-  .indexHeader .wrapper .title {
-    margin-top: 40px;
-  }
-  .indexHeader .wrapper .titleImageContainer .circular {
-    top: 0;
-    left: 20%;
-  }
-
   /* BLOG.HTML STYLING */
   .blogTitleContainer .wrapper {
     -webkit-box-pack: start;
@@ -993,26 +965,12 @@ h3 {
     width: 100%;
   }
   .topNav ul {
-    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-
-  /* INDEX.HTML STYLING*/
-  .indexHeader .wrapper {
-    margin-top: 20px;
-  }
-  .indexHeader .wrapper .title {
-    margin-top: 50px;
-    font-size: clamp(50px, 8vw, 150px);
-  }
-  .indexHeader .wrapper .titleImageContainer .circular {
-    top: 5%;
-    left: 30%;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    width: 100px;
+  .topNav ul a {
+    padding: 25px 18px;
   }
 
   .imgAndContent {
@@ -1114,29 +1072,28 @@ h3 {
 
   /* INDEX.HTML STYLING*/
   .indexHeader .wrapper {
-    padding: 20px;
+    padding: 0px;
   }
   .indexHeader .wrapper .headerImageContainer {
-    margin-top: 0px;
     width: 90%;
+    left: 0px;
   }
   .indexHeader .wrapper .headerImageContainer .headerImage {
     width: 80%;
     margin: 0 auto;
   }
   .indexHeader .wrapper .titleImageContainer .circular {
-    position: static;
-    width: 7rem;
+    position: relative;
+    width: 10rem;
     top: 8%;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
   .indexHeader .wrapper .title {
-    font-size: clamp(50px, 11vw, 150px);
-    position: relative;
-    top: -108px;
-    left: -26px;
-    margin-bottom: 0px;
+    font-size: clamp(50px, 15vw, 150px);
+    top: -115px;
+    left: -15px;
+    margin-top: 45px;
   }
 }
 @media (max-width: 650px) {
@@ -1173,6 +1130,15 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  /* INDEX.HTML STYLING */
+  .indexHeader .wrapper .titleImageContainer .circular {
+    position: relative;
+    width: 8rem;
+  }
+  .indexHeader .wrapper .title {
+    top: -100px;
   }
 
   .contentContainer1 {
@@ -1232,5 +1198,15 @@ h3 {
   }
   .contactMain .wrapper .socialContainer {
     margin-top: 0px;
+  }
+}
+@media (max-width: 478px) {
+  .indexHeader .wrapper .titleImageContainer .circular {
+    position: relative;
+    width: 6.3rem;
+  }
+  .indexHeader .wrapper .title {
+    top: -95px;
+    left: -20px;
   }
 }

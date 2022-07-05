@@ -1,379 +1,365 @@
 // media queries
-@media (max-width: 1307px) {
-  /* INDEX.HTML STYLING */
-  // index.html: header styling with headshot
 
-  .indexHeader {
-    .wrapper {
-      width: 95%;
-      justify-content: center;
-      align-items: center;
-
-      .headerImageContainer {
-        right: 10px;
+@media (max-width: 1310px) {
+      /* INDEX.HTML STYLING */
+      // index.html: header styling with headshot
+      .indexHeader {
+            .wrapper {
+                  margin-top: 3rem;
+                  width: 95%;
+                  justify-content: center;
+            }
       }
 
-      .title {
-        font-size: clamp(120px, 8vw, 150px);
+      /* BLOG.HTML STYLING */
+      // blog.html: header styling
+      .blogTitleContainer {
+            .wrapper {
+                  justify-content: flex-start;
+                  align-items: flex-end;
+            }
       }
-    }
-  }
 
-  /* BLOG.HTML STYLING */
-  // blog.html: header styling
-  .blogTitleContainer {
-    .wrapper {
-      justify-content: flex-start;
-      align-items: flex-end;
-    }
-  }
-
-  /* CONTACT.HTML STYLING */
-  // contact.html: form styling
-  .contactMain {
-    .wrapper {
-      .socialContainer {
-        width: 100%;
-        .socialIconsContainer {
-          display: flex;
-          justify-content: center;
-        }
+      /* CONTACT.HTML STYLING */
+      // contact.html: form styling
+      .contactMain {
+            .wrapper {
+                  .socialContainer {
+                        width: 100%;
+                        .socialIconsContainer {
+                              display: flex;
+                              justify-content: center;
+                        }
+                  }
+                  .contactMeForm {
+                        width: 100%;
+                        margin-top: 2rem;
+                        .formContainer {
+                              .flexMe {
+                                    width: 100%;
+                                    flex-wrap: wrap;
+                                    flex-direction: column;
+                              }
+                              .name,
+                              .email {
+                                    width: 100%;
+                              }
+                        }
+                  }
+            }
       }
-      .contactMeForm {
-        width: 100%;
-        margin-top: 2rem;
-        .formContainer {
-          .flexMe {
-            width: 100%;
-            flex-wrap: wrap;
-            flex-direction: column;
-          }
-          .name,
-          .email {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: 1108px) {
-  /* INDEX.HTML STYLING */
-  // index.html: header styling
-  .indexHeader {
-    .wrapper {
-      justify-content: center;
-      align-items: center;
-      padding-top: 5rem;
-      margin-top: 100px;
-
-      .headerImageContainer {
-        margin-top: 80px;
+      /* BLOG.HTML STYLING */
+      // blog.html: header styling
+      .blogTitleContainer {
+            .wrapper {
+                  justify-content: flex-start;
+                  align-items: flex-end;
+            }
       }
-      .title {
-        margin-top: 40px;
+
+      // blog.html: main styling
+      .blogMain .wrapper {
+            flex-direction: column;
       }
-      .titleImageContainer .circular {
-        top: 0;
-        left: 20%;
+
+      .twoAside {
+            .contentContainer,
+            .bottom {
+                  text-align: center;
+            }
       }
-    }
-  }
 
-  /* BLOG.HTML STYLING */
-  // blog.html: header styling
-  .blogTitleContainer {
-    .wrapper {
-      justify-content: flex-start;
-      align-items: flex-end;
-    }
-  }
+      .blogMain .twoAside {
+            min-width: 100%;
+            margin: 0px;
+      }
 
-  // blog.html: main styling
-  .blogMain .wrapper {
-    flex-direction: column;
-  }
+      .blogMain .blogContainer {
+            min-width: 100%;
+            margin: 50px 0px;
+            text-align: center;
+      }
 
-  .twoAside {
-    .contentContainer,
-    .bottom {
-      text-align: center;
-    }
-  }
-
-  .blogMain .twoAside {
-    min-width: 100%;
-    margin: 0px;
-  }
-
-  .blogMain .blogContainer {
-    min-width: 100%;
-    margin: 50px 0px;
-    text-align: center;
-  }
-
-  .flexMe {
-    margin-bottom: 1rem;
-    input[class="email"],
-    input[class="name"] {
-      width: 100%;
-    }
-  }
+      .flexMe {
+            margin-bottom: 1rem;
+            input[class='email'],
+            input[class='name'] {
+                  width: 100%;
+            }
+      }
 }
 
 @media (max-width: 934px) {
-  /* TOP NAVIGATION STYLING */
-  // applicable to each index, blog & contact.html
-  .topNav {
-    .sideMenuContainer {
-      width: 100%;
-    }
-    ul {
-      width: 100%;
-      justify-content: center;
-    }
-  }
-
-  /* INDEX.HTML STYLING*/
-  // index.html: header styling
-  .indexHeader {
-    .wrapper {
-      margin-top: 20px;
-
-      .title {
-        margin-top: 50px;
-        font-size: clamp(50px, 8vw, 150px);
+      /* TOP NAVIGATION STYLING */
+      // applicable to each index, blog & contact.html
+      .topNav {
+            .sideMenuContainer {
+                  width: 100%;
+            }
+            ul {
+                  justify-content: center;
+                  a {
+                        padding: 25px 18px;
+                  }
+            }
       }
-      .titleImageContainer {
-        .circular {
-          top: 5%;
-          left: 30%;
-          transform: rotate(0deg);
-          width: 100px;
-        }
+
+      // index.html: image & description section
+      .imgAndContent {
+            display: flex;
+            flex-direction: column;
+
+            .wrapper {
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%;
+                  text-align: center;
+            }
+
+            .contentContainer1,
+            .contentContainer2 {
+                  width: 100%;
+                  text-align: center;
+            }
+            .imgContainer2 {
+                  order: -1;
+            }
+            .contentContainer2 {
+                  padding: 100px 20px;
+            }
+            .bridgeImage,
+            .lotusImage {
+                  max-width: 80%;
+                  text-align: center;
+                  margin: 0 auto;
+            }
       }
-    }
-  }
 
-  // index.html: image & description section
-  .imgAndContent {
-    display: flex;
-    flex-direction: column;
+      // index.html: willows journey section
+      .journey {
+            padding: 0px;
+            .journeyContainer {
+                  .journeyPicContainer {
+                        min-width: 100%;
 
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-    }
-
-    .contentContainer1,
-    .contentContainer2 {
-      width: 100%;
-      text-align: center;
-    }
-    .imgContainer2 {
-      order: -1;
-    }
-    .contentContainer2 {
-      padding: 100px 20px;
-    }
-    .bridgeImage,
-    .lotusImage {
-      max-width: 80%;
-      text-align: center;
-      margin: 0 auto;
-    }
-  }
-
-  // index.html: willows journey section
-  .journey {
-    padding: 0px;
-    .journeyContainer {
-      .journeyPicContainer {
-        min-width: 100%;
-
-        .journeyImage {
-          width: 80%;
-          margin: 0 auto;
-        }
+                        .journeyImage {
+                              width: 80%;
+                              margin: 0 auto;
+                        }
+                  }
+                  .journeyDesc {
+                        margin: 70px 0px;
+                        text-align: center;
+                        a {
+                              margin: 0 auto;
+                        }
+                  }
+            }
       }
-      .journeyDesc {
-        margin: 70px 0px;
-        text-align: center;
-        a {
-          margin: 0 auto;
-        }
-      }
-    }
-  }
 
-  // index.html: gallery section
-  .gallery {
-    padding: 30px 0px;
-    margin: 20px 0px;
-    .galleryContainer {
-      .flexContainer {
-        .listItem {
-          margin: 20px 0px 0px 0px;
-          min-width: 100%;
-        }
+      // index.html: gallery section
+      .gallery {
+            padding: 30px 0px;
+            margin: 20px 0px;
+            .galleryContainer {
+                  .flexContainer {
+                        .listItem {
+                              margin: 20px 0px 0px 0px;
+                              min-width: 100%;
+                        }
+                  }
+            }
       }
-    }
-  }
 
-  // index.html: footer section
-  .indexFooter {
-    padding: 1rem 0px;
-    .footerContainer {
-      width: 100%;
-      .footerFlexContainer {
-        li {
-          width: 100%;
-          text-align: center;
-        }
+      // index.html: footer section
+      .indexFooter {
+            padding: 1rem 0px;
+            .footerContainer {
+                  width: 100%;
+                  .footerFlexContainer {
+                        li {
+                              width: 100%;
+                              text-align: center;
+                        }
+                  }
+            }
       }
-    }
-  }
 
-  /* BLOG.HTML STYLING */
-  // blog.html: header styling
-  .blogTitleContainer {
-    .wrapper {
-      justify-content: flex-start;
-      align-items: flex-end;
-    }
-  }
+      /* BLOG.HTML STYLING */
+      // blog.html: header styling
+      .blogTitleContainer {
+            .wrapper {
+                  justify-content: flex-start;
+                  align-items: flex-end;
+            }
+      }
 }
 
 @media (max-width: 693px) {
-  /* TOP NAVIGATION STYLING */
-  // applicable to each index, blog & contact.html
-  .topNav ul a {
-    padding: 0.9rem;
-    font-size: 1.5rem;
-    transition: 0.3s;
-  }
+      /* TOP NAVIGATION STYLING */
+      // applicable to each index, blog & contact.html
+      .topNav ul a {
+            padding: 0.9rem;
+            font-size: 1.5rem;
+            transition: 0.3s;
+      }
 
-  /* INDEX.HTML STYLING*/
-  // index.html: header section
-  .indexHeader {
-    .wrapper {
-      padding: 20px;
-      .headerImageContainer {
-        margin-top: 0px;
-        width: 90%;
+      /* INDEX.HTML STYLING*/
+      // index.html: header section
+      .indexHeader {
+            .wrapper {
+                  padding: 0px;
 
-        .headerImage {
-          width: 80%;
-          margin: 0 auto;
-        }
+                  .headerImageContainer {
+                        width: 90%;
+                        left: 0px;
+
+                        .headerImage {
+                              width: 80%;
+                              margin: 0 auto;
+                        }
+                  }
+
+                  .titleImageContainer {
+                        .circular {
+                              position: relative;
+                              width: 10rem;
+                              top: 8%;
+                              transform: rotate(10deg);
+                        }
+                  }
+                  .title {
+                        font-size: clamp(50px, 15vw, 150px);
+                        top: -115px;
+                        left: -15px;
+                        margin-top: 45px;
+                  }
+            }
       }
-      .titleImageContainer {
-        .circular {
-          position: static;
-          width: 7rem;
-          top: 8%;
-          transform: rotate(0deg);
-        }
-      }
-      .title {
-        font-size: clamp(50px, 11vw, 150px);
-        position: relative;
-        top: -108px;
-        left: -26px;
-        margin-bottom: 0px;
-      }
-    }
-  }
 }
 
+// in this media query the hamburger shows up
 @media (max-width: 650px) {
-  /* TOP NAVIGATION STYLING */
-  // applicable to each index, blog & contact.html
-  .indexHeader .hamburger {
-    display: block;
-  }
-  .logo {
-    display: none;
-  }
-  .topNav ul {
-    background-color: $pine;
-    position: fixed;
-    top: 0.5rem;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 15%;
-    min-width: 9.5rem;
-    z-index: 30;
-    display: none;
-  }
-  input[type="checkbox"]:checked ~ ul {
-    display: flex;
-  }
-
-  // index.html: content container 1
-  .contentContainer1 {
-    padding: 4rem 1rem;
-  }
-
-  /* BLOG.HTML STYLING */
-  // blog.html: header styling
-  .blogTitleContainer {
-    .wrapper {
-      justify-content: flex-start;
-      align-items: flex-end;
-      padding: 0px;
-    }
-  }
-
-  // blog.html: main section
-  .date {
-    font-size: 1.6rem;
-    margin: 20px 0px;
-  }
-  .blogMain {
-    p {
-      font-size: 1.8rem;
-      text-align: center;
-      padding: 0px 1.5rem;
-    }
-    .wrapper,
-    .twoAside {
-      width: 100%;
-    }
-
-    .longBlog {
-      padding: 0px;
-      h2 {
-        font-size: 2.8rem;
+      /* TOP NAVIGATION STYLING */
+      // applicable to each index, blog & contact.html
+      .indexHeader .hamburger {
+            display: block;
       }
-      p {
-        min-width: 100%;
+      .logo {
+            display: none;
       }
-    }
-  }
-  .twoViewsContainer {
-    .views {
-      padding: 0px;
-      flex-direction: column;
-      .viewImageContainer {
-        img {
-          margin: 0 auto;
-        }
+      .topNav ul {
+            background-color: $pine;
+            position: fixed;
+            top: 0.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 15%;
+            min-width: 9.5rem;
+            z-index: 30;
+            display: none;
       }
-    }
-  }
+      input[type='checkbox']:checked ~ ul {
+            display: flex;
+      }
 
-  /* CONTACT.HTML STYLING */
-  // contact.html: main styling
-  .contactMain .wrapper {
-    width: 100%;
-    padding: 0px;
-    .socialContainer {
-      margin-top: 0px;
-    }
-  }
+      /* INDEX.HTML STYLING */
+      // index.html: header styling
+      .indexHeader {
+            .wrapper {
+                  .titleImageContainer {
+                        .circular {
+                              position: relative;
+                              width: 8rem;
+                        }
+                  }
+                  .title {
+                        top: -100px;
+                  }
+            }
+      }
+
+      // index.html: content container 1
+      .contentContainer1 {
+            padding: 4rem 1rem;
+      }
+
+      /* BLOG.HTML STYLING */
+      // blog.html: header styling
+      .blogTitleContainer {
+            .wrapper {
+                  justify-content: flex-start;
+                  align-items: flex-end;
+                  padding: 0px;
+            }
+      }
+
+      // blog.html: main section
+      .date {
+            font-size: 1.6rem;
+            margin: 20px 0px;
+      }
+      .blogMain {
+            p {
+                  font-size: 1.8rem;
+                  text-align: center;
+                  padding: 0px 1.5rem;
+            }
+            .wrapper,
+            .twoAside {
+                  width: 100%;
+            }
+
+            .longBlog {
+                  padding: 0px;
+                  h2 {
+                        font-size: 2.8rem;
+                  }
+                  p {
+                        min-width: 100%;
+                  }
+            }
+      }
+      .twoViewsContainer {
+            .views {
+                  padding: 0px;
+                  flex-direction: column;
+                  .viewImageContainer {
+                        img {
+                              margin: 0 auto;
+                        }
+                  }
+            }
+      }
+
+      /* CONTACT.HTML STYLING */
+      // contact.html: main styling
+      .contactMain .wrapper {
+            width: 100%;
+            padding: 0px;
+            .socialContainer {
+                  margin-top: 0px;
+            }
+      }
+}
+
+@media (max-width: 478px) {
+      .indexHeader {
+            .wrapper {
+                  .titleImageContainer {
+                        .circular {
+                              position: relative;
+                              width: 6.3rem;
+                        }
+                  }
+                  .title {
+                        top: -95px;
+                        left: -20px;
+                  }
+            }
+      }
 }
